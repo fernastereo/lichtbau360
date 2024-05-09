@@ -36,7 +36,7 @@ footer{
   width: 150px;
 }
 
-.social-icons-container{
+.nav-footer > .social-icons-container{
   display: flex;
   justify-content: flex-start;
   gap: 0.8rem;
@@ -44,12 +44,12 @@ footer{
   padding-top: 1.5rem;
 }
 
-.social-icons-container a{
+.nav-footer > .social-icons-container a{
   width: 1.4rem;
   height: 1.4rem;
 }
 
-.social-icon{
+.nav-footer > .social-icons-container > a >  .social-icon{
   fill: var(--lb_grey-lightest)
 }
 

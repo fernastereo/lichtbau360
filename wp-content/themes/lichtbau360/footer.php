@@ -2,7 +2,7 @@
     <div class="footer-container">
       <div class="site-footer__column-one">
         <h3 class="headline headline--small">Lichtbau360</h3>
-        <nav>  
+        <nav class="nav-footer">  
           <ul>
             <li><a href="/">Contactanos</a></li>
             <li><a href="/">Procesos de Calidad</a></li>
