@@ -1,10 +1,10 @@
 :root {
   --lb_grey-lightest: #DBDBDB;
-  --lb_grey-DEFAULT: #4D4D4D;
+  --lb_grey-default: #4D4D4D;
   --lb_yellow-middark: #F5C83E;
   --lb_yellow-dark: #cea734;
   --lb_white-background: #FBF8F8;
   --lb_black-background: #000000;
-  --lb_yellow-DEFAULT: #F2B705;
-  --lb-Default-white: #FFFFFF;
+  --lb_yellow-default: #F2B705;
+  --lb_default-white: #FFFFFF;
 }

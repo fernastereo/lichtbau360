@@ -1,6 +1,6 @@
 footer{
   width: 100%;
-  background-color: var(--lb_grey-DEFAULT);
+  background-color: var(--lb_grey-default);
   padding-top: 1.8rem;
   display: flex;
   flex-direction: column;

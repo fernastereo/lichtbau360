@@ -17,7 +17,7 @@ li {
 
 a{
   text-decoration: none;
-  color: var(--lb_grey-DEFAULT);
+  color: var(--lb_grey-default);
 }
 
 .navbar{
@@ -40,7 +40,7 @@ a{
   width: 100vw;
   height: 92vh;
   transition: all 0.7s ease;
-  background-color: var(--lb-Default-white);
+  background-color: var(--lb_default-white);
 }
 
 .nav-menu-container.active{
@@ -61,7 +61,7 @@ a{
 }
 
 .nav-menu-container > .social-icons-container > a >  .social-icon{
-  fill: var(--lb_grey-DEFAULT)
+  fill: var(--lb_grey-default)
 }
 
 .ellipse{
@@ -70,7 +70,7 @@ a{
   position: absolute;
   left: 1.088rem;
   top: 5.4rem;
-  background-color: var(--lb_yellow-DEFAULT);
+  background-color: var(--lb_yellow-default);
   border-radius: 50%;
   opacity: 0.1;
 }
@@ -92,7 +92,7 @@ a{
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--lb_grey-DEFAULT);
+  background-color: var(--lb_grey-default);
 }
 
 .hamburger.active .bar:nth-child(2){
@@ -147,7 +147,7 @@ a{
 
   .nav-link{
     text-decoration: none;
-    color: var(--lb_grey-DEFAULT);
+    color: var(--lb_grey-default);
     font-weight: 500;
     padding: 0 1rem;
     transition: color 0.3s ease;
