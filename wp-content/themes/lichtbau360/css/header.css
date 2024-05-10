@@ -33,7 +33,7 @@ a{
   justify-content: flex-start;
   align-items: center;
   position: fixed;
-  top: 115px;
+  top: 70px;
   left: -100%;
   gap: 0;
   flex-direction: column;
@@ -56,8 +56,8 @@ a{
 }
 
 .nav-menu-container > .social-icons-container a{
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
 }
 
 .nav-menu-container > .social-icons-container > a >  .social-icon{
@@ -72,11 +72,12 @@ a{
   top: 5.4rem;
   background-color: var(--lb_yellow-default);
   border-radius: 50%;
-  opacity: 0.1;
+  opacity: 0.3;
 }
 
 .nav-menu{
   margin-top: 8rem;
+  margin-left: -1.5rem;
   line-height: 3.5rem;
 }
 
