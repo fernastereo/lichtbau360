@@ -6,9 +6,10 @@ header {
   line-height: 1.5rem;
   letter-spacing: 0.085rem;
   position: fixed;
-  /* top: 0; */
+  top: 0;
   width: 100vw;
   transition: all 0.7s ease;
+  z-index: 3;   
 }
 
 li {
@@ -114,7 +115,7 @@ a{
     font-weight: 400;
     line-height: 1.375rem;
     letter-spacing: 0.022875rem;
-    padding: 1rem 0;
+    padding: 1rem 0; 
   }
 
   .navbar{
