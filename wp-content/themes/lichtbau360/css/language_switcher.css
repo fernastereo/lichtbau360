@@ -30,6 +30,10 @@
   position: relative;
 }
 
+.language-switcher .language:last-child{
+  border-radius: 0 0  1rem 1rem;
+}
+
 .language--current {
   pointer-events: none;
   height: 2rem;
@@ -45,6 +49,7 @@
   opacity: 1;
   visibility: visible;
   height: 2rem;
+  transition: all 0.3s ease-in;
 }
 
 @media(min-width: 768px){
