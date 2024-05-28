@@ -7,7 +7,9 @@
   <ul class="slider-pagi"></ul>
   <div class="slider">
     <div class="slide slide-0 active">
-      <div class="slide__bg" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?= get_theme_file_uri('/images/slider1.jpg') ?>)"></div>
+      <div class="slide__bg" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))">
+        <img class="slide__image" src="<?= get_theme_file_uri('/images/slider1.jpg') ?>" alt="">
+      </div>
       <div class="slide__content">
         <div class="slide__text">
           <h2 class="slide__text-heading">Proyectando tus sueños</h2>
@@ -18,7 +20,9 @@
       </div>
     </div>
     <div class="slide slide-1">
-      <div class="slide__bg" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?= get_theme_file_uri('/images/slider2.jpg') ?>)"></div>
+      <div class="slide__bg" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))">
+        <img class="slide__image" src="<?= get_theme_file_uri('/images/slider2.jpg') ?>" alt="">
+      </div>
       <div class="slide__content">
         <div class="slide__text">
           <h2 class="slide__text-heading">Disrupting Industries</h2>
@@ -29,7 +33,9 @@
       </div>
     </div>
     <div class="slide slide-2">
-      <div class="slide__bg" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(<?= get_theme_file_uri('/images/slider3.jpg') ?>)"></div>
+      <div class="slide__bg" style="background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))">
+        <img class="slide__image" src="<?= get_theme_file_uri('/images/slider3.jpg') ?>" alt="">
+      </div>
       <div class="slide__content">
         <div class="slide__text">
           <h2 class="slide__text-heading">Moving Business Forward</h2>
