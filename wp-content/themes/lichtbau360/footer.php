@@ -63,7 +63,7 @@
   </div>
   <div class="copyright">
     <div class="copyright__links">
-      <a href="/">Politica de tratamiento de datos</a>
+      <a href="<?= site_url('/politica-privacidad') ?>">Politica de tratamiento de datos</a>
       <a href="/">Terminos y condiciones</a>
     </div>
     <a href="/">Copyright 2024</a>

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lichtbau360</title>
   <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
   <header>
     <nav class="navbar">
       <a href="/" class="nav-branding">
@@ -42,7 +41,7 @@
             <a href="/" class="nav-link">Proyectos</a>
           </li>
           <li class="nav-item">
-            <a href="/" class="nav-link">Lichtbau360</a>
+            <a href="<?= site_url('/nosotros') ?>" class="nav-link">Lichtbau360</a>
           </li>
           <li class="nav-item">
             <a href="/" class="nav-link">Servicio Al Cliente</a>
