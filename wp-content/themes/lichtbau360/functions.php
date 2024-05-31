@@ -1,4 +1,5 @@
 <?php 
+require get_template_directory() . '/helpers/helpers.php';
 
 function lichtbau360_files() {
   wp_enqueue_style('custom-google-font', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -18,10 +19,19 @@ function lichtbau360_files() {
 add_action('wp_enqueue_scripts', 'lichtbau360_files');
 
 function lichtbau360_features(){
+  register_nav_menu('headerMenuLocation', 'Header Menu Location');
   add_theme_support('title-tag');
 }
 
 add_action('after_setup_theme', 'lichtbau360_features');
 
-require get_template_directory() . '/helpers/helpers.php';
+function add_additional_class_on_li($classes, $item, $args) {
+    if(isset($args->add_li_class)) {
+        $classes[] = $args->add_li_class;
+    }
+    return $classes;
+}
+
+add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
+
 ?>

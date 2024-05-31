@@ -30,23 +30,12 @@
           </a>
         </div>
         <div class="ellipse"></div>
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="/" class="nav-link">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link">Servicios</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link">Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a href="<?= site_url('/nosotros') ?>" class="nav-link">Lichtbau360</a>
-          </li>
-          <li class="nav-item">
-            <a href="/" class="nav-link">Servicio Al Cliente</a>
-          </li>
-        </ul>
+          <?php wp_nav_menu([
+            'theme_location' => 'headerMenuLocation',
+            'container' => 'ul',
+            'menu_class' => 'nav-menu',
+            'add_li_class'  => 'nav-link'
+          ]) ?>
       </div>
       
       <?php get_template_part('template-parts/components/language-switcher/language', 'switcher', ['container_class_modifier' => 'header']) ?>
