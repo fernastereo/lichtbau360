@@ -1,0 +1,45 @@
+.hero {
+  height: 20rem;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-image{
+  height: 2.813rem;
+  width: 17.5rem;
+}
+
+.hero-content {
+  color: white;
+  padding-top: 5.5rem;
+}
+
+.hero-title {
+  font-size: 3em;
+}
+
+.hero-description {
+  font-size: 1.2em;
+  margin: 0.6rem auto;
+  width: 60%;
+  letter-spacing: 0.09rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+  color: var(--lb_grey-lightest);
+}
+
+.hero-circle {
+  background-color: var(--lb_yellow-midlight);
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 17.5rem;
+}
