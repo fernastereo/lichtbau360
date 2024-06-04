@@ -50,4 +50,19 @@
     </div>
   </div>
 </main>
+<section class="intro">
+  <div class="intro-content">
+    <h3>Desarrollamos Proyectos, Asesoramos Jurídicamente y te Acompañamos Comercialmente.</h3>
+    <h3>Con nuestra asesoría experta, podrás contar un equipo altamente calificado y un acompañamiento integral de inicio a fin.</h3>
+  </div>
+  <div class="main-message">
+    <?php get_template_part('template-parts/components/pilars/pilars', 'pilars', ['container_class_modifier' => 'desktop'])?>
+
+    <div class="main-message__ellipse"></div>
+    <h2 class="main-message__text">
+      Vive el proceso de forma ligera
+    </h2>
+  </div>
+  <?php get_template_part('template-parts/components/pilars/pilars', 'pilars', ['container_class_modifier' => 'mobile'])?>
+</section>
 <?php get_footer()?> 
