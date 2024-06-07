@@ -1,0 +1,308 @@
+.servicios {
+  background-color: #f5f5f5;
+  padding: 4rem 0;
+}
+
+.servicios-sub-header{
+  display: none;
+}
+
+.servicios-header{
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: 400;
+  color: var(--lb_grey-default);
+  padding-bottom: 1rem;
+}
+
+.servicios--slider{
+  padding: 1rem 0;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.servicios--slides {
+  /* border: 1px solid red; */
+  height: 185vh;
+}
+
+.servicios--slide {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  /* border: 1px solid greenyellow; */
+}
+
+.servicios--slide.juridica{
+  transform: translate(-100%, 0%);
+}
+
+.servicios--slide.proyectos{
+  transform: translate(0%, -100%);
+}
+
+.servicios--slide.inmobiliaria{
+  transform: translate(100%, -200%);
+}
+
+.servicios-pagi{
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.servicios-pagi__elem{
+  margin: 0 0.5rem;
+}
+
+.servicios--icon:hover,
+.servicios--icon.active{
+  fill: var(--lb_yellow-light);
+  stroke: var(--lb_black-background);
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.servicios__title{
+  text-align: center;
+  padding: 0.6rem 0;
+  font-size: 1.8rem;
+  color: var(--lb_grey-warm);
+}
+
+/* Styles Inner Menu for Services */
+.servicios__content--menu{
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: var(--lb_grey-lightest);
+}
+
+.servicios__content--menu ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
+  height: 3.375rem;
+  width: 150%;
+}
+
+.servicios__content--menu li {
+  padding: 0.6rem;
+}
+
+.servicios__content--menu a {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+  color: var(--lb_grey-dark);
+}
+
+.servicios__content--menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--lb_black-default);
+  opacity: 0;
+  transition: opacity 400ms, transform 400ms;
+}
+
+.servicios__content--menu a:hover::after,
+.servicios__content--menu a:focus::after {
+  opacity: 1;
+}
+
+.servicios__content--menu li a::after {
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.servicios__content--menu li a:hover::after,
+.servicios__content--menu li a:focus::after{
+  transform: scale(1);
+}
+
+.servicios__content--menu li:first-child a.active{
+  font-weight: 500;
+  color: var(--lb_black-default);
+}
+
+.servicios__content--menu li:first-child a.active::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--lb_black-default);
+  transform: scale(1);
+  opacity: 1;
+} 
+
+.servicios__content--menu a:hover {
+  font-weight: 500;
+  color: var(--lb_black-default);
+}
+/* End Styles Inner Menu for Services */
+
+
+/* Styles inner content for Services (servicios__text) */
+.servicios__text{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.7s ease-in-out;
+  width: 100%;
+}
+
+.servicios__text.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.servicios__text--heading{
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  color: var(--lb_grey-light);
+}
+
+.servicios__text--proteccion .text--body-1,
+.servicios__text--tramites .text--body-1,
+.servicios__text--licitaciones .text--body-1{
+  position: relative;
+  width: 100%;
+  height: 15.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(to right, rgba(255,255,255,1) 25%,rgba(255,255,255,0) 150%);
+}
+
+.servicios__text--proteccion .image--body-1,
+.servicios__text--tramites .image--body-1,
+.servicios__text--licitaciones .image--body-1{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-top-left-radius: 90%;
+}
+
+.servicios__text--proteccion .text--body-1 p,
+.servicios__text--tramites .text--body-1 p,
+.servicios__text--licitaciones .text--body-1 p{
+  width: 60%;
+  text-align: left;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+  color: var(--lb_grey-default);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.servicios__text--proteccion .text--body-1 a,
+.servicios__text--tramites .text--body-1 a,
+.servicios__text--licitaciones .text--body-1 a{
+  position: absolute;
+  left: 2rem;
+  margin-top: 5rem;
+}
+
+.servicios__text--proteccion .text--body-2 h3,
+.servicios__text--tramites .text--body-2 h3,
+.servicios__text--licitaciones .text--body-2 h3{
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--lb_grey-default);
+  text-align: center;
+  margin: 1.5rem 0;
+  font-style: italic;
+  padding: 0 2.5rem;
+}
+
+
+.servicios__text--proteccion .text--body-2 p,
+.servicios__text--tramites .text--body-2 p,
+.servicios__text--licitaciones .text--body-2 p{
+  text-align: center;
+  color: var(--lb_grey-default);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  padding: 0 1.5rem;
+}
+
+.servicios__text--proteccion .text--body-2 .button-container,
+.servicios__text--tramites .text--body-2 .button-container,
+.servicios__text--licitaciones .text--body-2 .button-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.servicios__text--proteccion .text--body-2 a,
+.servicios__text--tramites .text--body-2 a,
+.servicios__text--licitaciones .text--body-2 a{
+  width: auto;
+  padding: 0.6rem 2rem;
+  margin: 0 auto;
+  color: var(--lb_grey-default);
+  background-color: white;
+  border-color: var(--lb_grey-dark);
+}
+
+.servicios__text--proteccion .text--body-2 .image-container,
+.servicios__text--tramites .text--body-2 .image-container,
+.servicios__text--licitaciones .text--body-2 .image-container{
+  width: 100%;
+  overflow: hidden;
+  height: 295px;
+  margin-top: 4rem;
+}
+
+.servicios__text--proteccion .image--body-2,
+.servicios__text--tramites .image--body-2,
+.servicios__text--licitaciones .image--body-2{
+  margin-left: 4rem;
+  max-height: 100%;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+  filter: grayscale(80%);
+}
+
+/* End Styles inner content for Services (servicios__text) */
+
+/* Media queries for desktop */
+@media(min-width: 768px){
+.servicios{
+  padding: 6rem 0;
+}
+
+.servicios-sub-header{
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.servicios__content--menu ul{
+  width: 100%;
+}
+}
