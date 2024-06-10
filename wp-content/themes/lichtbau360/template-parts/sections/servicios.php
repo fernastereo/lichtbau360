@@ -119,16 +119,163 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
           <div class="servicios__text--container">
             <div class="servicios__text servicios__text--obra-civil active">
               <h2 class="servicios__text--heading">Obra Civil</h2>
-              <div class="servicios__text--body"></div>
+              <div class="servicios__text--body">
+                <div class="text--body-1">
+                  <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
+                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                  <a class="slide__text-link">Contáctanos</a>
+                </div>
+                <div class="text--body-2">
+                  <h3>Desde cero</h3>
+                  <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
+                  <h3>Reparaciones</h3>
+                  <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
+                  <div class="proyectos__list--container">
+                    <h2>Construimos lo que necesites, nos adaptamos a tus necesidades</h2>
+                    <hr style="margin: 0 3rem;">
+                    <div class="proyectos--realizados">
+                      <h3>Proyectos Realizados</h3>
+                      <div class="proyectos--realizados__slider">
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 1</h4>
+                          <p>Descripcion</p>
+                        </div>
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 2</h4>
+                          <p>Descripcion</p>
+                        </div>
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 3</h4>
+                          <p>Descripcion</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="servicios__text servicios__text--acabados">
               <h2 class="servicios__text--heading">Acabados</h2>
+              <div class="servicios__text--body">
+                <div class="text--body-1">
+                  <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
+                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                  <a class="slide__text-link">Contáctanos</a>
+                </div>
+                <div class="text--body-2">
+                  <h3>Desde cero</h3>
+                  <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
+                  <h3>Reparaciones</h3>
+                  <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
+                  <div class="proyectos__list--container">
+                    <h2>Construimos lo que necesites, nos adaptamos a tus necesidades</h2>
+                    <hr style="margin: 0 3rem;">
+                    <div class="proyectos--realizados">
+                      <h3>Proyectos Realizados</h3>
+                      <div class="proyectos--realizados__slider">
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 1</h4>
+                          <p>Descripcion</p>
+                        </div>
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 2</h4>
+                          <p>Descripcion</p>
+                        </div>
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 3</h4>
+                          <p>Descripcion</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="servicios__text servicios__text--diseno">
               <h2 class="servicios__text--heading">Diseno de Interiores</h2>
+              <div class="servicios__text--body">
+                <div class="text--body-1">
+                  <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
+                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                  <a class="slide__text-link">Contáctanos</a>
+                </div>
+                <div class="text--body-2">
+                  <h3>Desde cero</h3>
+                  <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
+                  <h3>Reparaciones</h3>
+                  <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
+                  <div class="proyectos__list--container">
+                    <h2>Construimos lo que necesites, nos adaptamos a tus necesidades</h2>
+                    <hr style="margin: 0 3rem;">
+                    <div class="proyectos--realizados">
+                      <h3>Proyectos Realizados</h3>
+                      <div class="proyectos--realizados__slider">
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 1</h4>
+                          <p>Descripcion</p>
+                        </div>
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 2</h4>
+                          <p>Descripcion</p>
+                        </div>
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 3</h4>
+                          <p>Descripcion</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>            
             <div class="servicios__text servicios__text--remodelaciones">
               <h2 class="servicios__text--heading">Remodelaciones</h2>
+              <div class="servicios__text--body">
+                <div class="text--body-1">
+                  <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
+                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                  <a class="slide__text-link">Contáctanos</a>
+                </div>
+                <div class="text--body-2">
+                  <h3>Desde cero</h3>
+                  <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
+                  <h3>Reparaciones</h3>
+                  <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
+                  <div class="proyectos__list--container">
+                    <h2>Construimos lo que necesites, nos adaptamos a tus necesidades</h2>
+                    <hr style="margin: 0 3rem;">
+                    <div class="proyectos--realizados">
+                      <h3>Proyectos Realizados</h3>
+                      <div class="proyectos--realizados__slider">
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 1</h4>
+                          <p>Descripcion</p>
+                        </div>
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 2</h4>
+                          <p>Descripcion</p>
+                        </div>
+                        <div class="proyectos--realizados__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
+                          <h4>Proyecto 3</h4>
+                          <p>Descripcion</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

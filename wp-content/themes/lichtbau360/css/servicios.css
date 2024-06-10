@@ -192,6 +192,21 @@
   background: linear-gradient(to right, rgba(255,255,255,1) 25%,rgba(255,255,255,0) 150%);
 }
 
+.servicios__text--obra-civil .text--body-1,
+.servicios__text--acabados .text--body-1,
+.servicios__text--diseno .text--body-1,
+.servicios__text--remodelaciones .text--body-1{
+  position: relative;
+  width: 100%;
+  height: 15.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
 .servicios__text--proteccion .image--body-1,
 .servicios__text--tramites .image--body-1,
 .servicios__text--licitaciones .image--body-1{
@@ -203,6 +218,22 @@
   object-fit: cover;
   z-index: -1;
   border-top-left-radius: 90%;
+}
+
+.servicios__text--obra-civil .image--body-1,
+.servicios__text--acabados .image--body-1,
+.servicios__text--diseno .image--body-1,
+.servicios__text--remodelaciones .image--body-1{
+  position: absolute;
+  top: 0;
+  left: -25%;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  filter: grayscale(60%);
 }
 
 .servicios__text--proteccion .text--body-1 p,
@@ -218,6 +249,20 @@
   font-weight: 400;
 }
 
+.servicios__text--obra-civil .text--body-1 p,
+.servicios__text--acabados .text--body-1 p,
+.servicios__text--diseno .text--body-1 p,
+.servicios__text--remodelaciones .text--body-1 p{
+  width: 60%;
+  text-align: left;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  color: var(--lb_grey-default);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .servicios__text--proteccion .text--body-1 a,
 .servicios__text--tramites .text--body-1 a,
 .servicios__text--licitaciones .text--body-1 a{
@@ -226,9 +271,22 @@
   margin-top: 5rem;
 }
 
+.servicios__text--obra-civil .text--body-1 a,
+.servicios__text--acabados .text--body-1 a,
+.servicios__text--diseno .text--body-1 a,
+.servicios__text--remodelaciones .text--body-1 a{
+  position: absolute;
+  right: 3rem;
+  margin-top: 6rem;
+}
+
 .servicios__text--proteccion .text--body-2 h3,
 .servicios__text--tramites .text--body-2 h3,
-.servicios__text--licitaciones .text--body-2 h3{
+.servicios__text--licitaciones .text--body-2 h3,
+.servicios__text--obra-civil .text--body-2 h3,
+.servicios__text--acabados .text--body-2 h3,
+.servicios__text--diseno .text--body-2 h3,
+.servicios__text--remodelaciones .text--body-2 h3{
   font-weight: 400;
   font-size: 2rem;
   color: var(--lb_grey-default);
@@ -241,7 +299,11 @@
 
 .servicios__text--proteccion .text--body-2 p,
 .servicios__text--tramites .text--body-2 p,
-.servicios__text--licitaciones .text--body-2 p{
+.servicios__text--licitaciones .text--body-2 p,
+.servicios__text--obra-civil .text--body-2 p,
+.servicios__text--acabados .text--body-2 p,
+.servicios__text--diseno .text--body-2 p,
+.servicios__text--remodelaciones .text--body-2 p{
   text-align: center;
   color: var(--lb_grey-default);
   font-size: 1rem;
@@ -288,15 +350,99 @@
   border-bottom-left-radius: 150px;
   filter: grayscale(80%);
 }
+
+.servicios__text--obra-civil .proyectos__list--container,
+.servicios__text--acabados .proyectos__list--container,
+.servicios__text--diseno .proyectos__list--container,
+.servicios__text--remodelaciones .proyectos__list--container{
+  background-color: var(--lb_grey-lightest);
+  padding: 2.5rem 1rem;
+}
+
+.servicios__text--obra-civil .proyectos__list--container h2,
+.servicios__text--acabados .proyectos__list--container h2,
+.servicios__text--diseno .proyectos__list--container h2,
+.servicios__text--remodelaciones .proyectos__list--container h2{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--lb_black-default);
+  margin-bottom: 1.5rem;
+}
+
+.servicios__text--obra-civil .proyectos--realizados, 
+.servicios__text--acabados .proyectos--realizados,
+.servicios__text--diseno .proyectos--realizados,
+.servicios__text--remodelaciones .proyectos--realizados{
+  padding: 1rem 0;
+}
+
+.servicios__text--obra-civil .proyectos--realizados h3,
+.servicios__text--acabados .proyectos--realizados h3,
+.servicios__text--diseno .proyectos--realizados h3,
+.servicios__text--remodelaciones .proyectos--realizados h3{
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--lb_grey-default);
+  font-weight: 600;
+}
+
+.servicios__text--obra-civil .proyectos--realizados__slider,
+.servicios__text--acabados .proyectos--realizados__slider,
+.servicios__text--diseno .proyectos--realizados__slider,
+.servicios__text--remodelaciones .proyectos--realizados__slider{
+  display:flex;
+  justify-content: flex-start;
+  overflow: auto;
+  gap: 0.7rem;  
+}
+
+.servicios__text--obra-civil .proyectos--realizados__card,
+.servicios__text--acabados .proyectos--realizados__card,
+.servicios__text--diseno .proyectos--realizados__card,
+.servicios__text--remodelaciones .proyectos--realizados__card{
+  width: 276px;
+  height: 382px;
+  background-color: var(--lb_white-background);
+  padding: 0;
+}
+
+.servicios__text--obra-civil .proyectos--realizados__card img,
+.servicios__text--acabados .proyectos--realizados__card img,
+.servicios__text--diseno .proyectos--realizados__card img,
+.servicios__text--remodelaciones .proyectos--realizados__card img{
+  width: 276px;
+  height: 308px;
+  object-fit: cover;
+  filter: grayscale(80%);
+}
+
+.servicios__text--obra-civil .proyectos--realizados__card h4,
+.servicios__text--acabados .proyectos--realizados__card h4,
+.servicios__text--diseno .proyectos--realizados__card h4,
+.servicios__text--remodelaciones .proyectos--realizados__card h4{
+  font-size: 1.5rem;
+  text-align: justify;
+  font-weight: 600;
+  color: var(--lb_grey-default);
+  margin: 0.2rem 1rem;
+}
+
+.servicios__text--obra-civil .proyectos--realizados__card p,
+.servicios__text--acabados .proyectos--realizados__card p,
+.servicios__text--diseno .proyectos--realizados__card p,
+.servicios__text--remodelaciones .proyectos--realizados__card p{
+  margin: 0.4rem 1rem;
+  font-size: 1rem;
+  text-align: justify;
+  font-weight: 400;
+  color: var(--lb_grey-default);
+  padding: 0;
+}
+
+
 /* End Styles inner content for Services (servicios__text) */
-
-#algo{
-  transition: all 2s ease;
-}
-
-#algo:hover{
-  color: var(--lb_yellow-light)
-}
 
 /* Media queries for desktop */
 @media(min-width: 768px){
