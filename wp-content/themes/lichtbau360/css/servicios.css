@@ -48,9 +48,9 @@
 }
 
 .servicios-pagi{
-  height: 5rem;
   display: flex;
-  justify-content: center;
+  margin: 1rem 2rem;
+  justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
 }
@@ -59,12 +59,14 @@
   margin: 0 0.5rem;
 }
 
+.servicios--icon{
+  fill: var(--lb_grey-default);
+  transition: all 0.3s ease-in-out;
+}
 .servicios--icon:hover,
 .servicios--icon.active{
-  fill: var(--lb_yellow-light);
-  stroke: var(--lb_black-background);
-  transform: scale(1.3);
-  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  filter: drop-shadow(3px 3px 2px rgba(242, 183, 5, 0.6));
 }
 
 .servicios__title{
@@ -286,8 +288,15 @@
   border-bottom-left-radius: 150px;
   filter: grayscale(80%);
 }
-
 /* End Styles inner content for Services (servicios__text) */
+
+#algo{
+  transition: all 2s ease;
+}
+
+#algo:hover{
+  color: var(--lb_yellow-light)
+}
 
 /* Media queries for desktop */
 @media(min-width: 768px){
