@@ -24,9 +24,9 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
         <div class="servicios__content">
           <div class="servicios__content--menu">
             <ul>
-              <li><a href="#" data-menu="proteccion" class="active">Proteccion Legal</a></li>
-              <li><a href="#" data-menu="tramites">Tramites</a></li>
-              <li><a href="#" data-menu="licitaciones">Licitaciones</a></li>
+              <li><a class="tab-link" href="#" data-menu="proteccion" class="active">Proteccion Legal</a></li>
+              <li><a class="tab-link" href="#" data-menu="tramites">Tramites</a></li>
+              <li><a class="tab-link" href="#" data-menu="licitaciones">Licitaciones</a></li>
             </ul>
           </div>
           <div class="servicios__text--container">
@@ -39,7 +39,7 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                   <a class="slide__text-link">Contáctanos</a>
                 </div>
                 <div class="text--body-2">
-                  <h3>Contratos</h3>
+                  <h3>Contratos (Proteccion Legal)</h3>
                   <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
                   <h3>Escrituras</h3>
                   <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
@@ -63,7 +63,7 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                   <a class="slide__text-link">Contáctanos</a>
                 </div>
                 <div class="text--body-2">
-                  <h3>Contratos</h3>
+                  <h3>Contratos (Tramites)</h3>
                   <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
                   <h3>Escrituras</h3>
                   <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
@@ -87,7 +87,7 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                   <a class="slide__text-link">Contáctanos</a>
                 </div>
                 <div class="text--body-2">
-                  <h3>Contratos</h3>
+                  <h3>Contratos (Licitaciones)</h3>
                   <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
                   <h3>Escrituras</h3>
                   <p>Te acompañamos desde la arquitectura, el montaje y la construcción de obra blanca</p>
@@ -110,10 +110,10 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
         <div class="servicios__content">
           <div class="servicios__content--menu">
             <ul>
-              <li><a href="#" data-menu="obra-civil" class="active">Obra Civil</a></li>
-              <li><a href="#" data-menu="acabados">Acabados</a></li>
-              <li><a href="#" data-menu="diseno">Diseno de Interiores</a></li>
-              <li><a href="#" data-menu="remodelaciones">Remodelaciones</a></li>
+              <li><a class="tab-link" href="#" data-menu="obra-civil" class="active">Obra Civil</a></li>
+              <li><a class="tab-link" href="#" data-menu="acabados">Acabados</a></li>
+              <li><a class="tab-link" href="#" data-menu="diseno">Diseno de Interiores</a></li>
+              <li><a class="tab-link" href="#" data-menu="remodelaciones">Remodelaciones</a></li>
             </ul>
           </div>
           <div class="servicios__text--container">
@@ -136,21 +136,24 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                     <div class="proyectos--realizados">
                       <h3>Proyectos Realizados</h3>
                       <div class="proyectos--realizados__slider">
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 1</h4>
-                          <p>Descripcion</p>
-                        </div>
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 2</h4>
-                          <p>Descripcion</p>
-                        </div>
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 3</h4>
-                          <p>Descripcion</p>
-                        </div>
+                        <?php
+                          $proyectosObraNueva = new WP_Query(array(
+                            'post_type' => 'proyecto',
+                            'posts_per_page' => 3
+                          ));
+                          
+                          while ($proyectosObraNueva->have_posts()){
+                            $proyectosObraNueva->the_post(); ?>
+                            <div class="proyectos--realizados__card">
+                              <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                              <h4>
+                                <a href="<?php the_permalink(); ?>">
+                                  <?php the_title(); ?>
+                                </a>
+                              </h4>
+                              <p><?php echo wp_trim_words(get_the_content(), 18); ?></p>
+                            </div>
+                          <?php }?>
                       </div>
                     </div>
                   </div>
@@ -176,21 +179,24 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                     <div class="proyectos--realizados">
                       <h3>Proyectos Realizados</h3>
                       <div class="proyectos--realizados__slider">
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 1</h4>
-                          <p>Descripcion</p>
-                        </div>
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 2</h4>
-                          <p>Descripcion</p>
-                        </div>
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 3</h4>
-                          <p>Descripcion</p>
-                        </div>
+                        <?php
+                          $proyectosObraNueva = new WP_Query(array(
+                            'post_type' => 'proyecto',
+                            'posts_per_page' => 3
+                          ));
+                          
+                          while ($proyectosObraNueva->have_posts()){
+                            $proyectosObraNueva->the_post(); ?>
+                            <div class="proyectos--realizados__card">
+                              <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                              <h4>
+                                <a href="<?php the_permalink(); ?>">
+                                  <?php the_title(); ?>
+                                </a>
+                              </h4>
+                              <p><?php echo wp_trim_words(get_the_content(), 18); ?></p>
+                            </div>
+                        <?php }?>
                       </div>
                     </div>
                   </div>
@@ -198,7 +204,7 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
               </div>
             </div>
             <div class="servicios__text servicios__text--diseno">
-              <h2 class="servicios__text--heading">Diseno de Interiores</h2>
+              <h2 class="servicios__text--heading">Diseño de Interiores</h2>
               <div class="servicios__text--body">
                 <div class="text--body-1">
                   <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
@@ -216,22 +222,25 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                     <div class="proyectos--realizados">
                       <h3>Proyectos Realizados</h3>
                       <div class="proyectos--realizados__slider">
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 1</h4>
-                          <p>Descripcion</p>
-                        </div>
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 2</h4>
-                          <p>Descripcion</p>
-                        </div>
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 3</h4>
-                          <p>Descripcion</p>
-                        </div>
-                      </div>
+                        <?php
+                          $proyectosObraNueva = new WP_Query(array(
+                            'post_type' => 'proyecto',
+                            'posts_per_page' => 3
+                          ));
+                          
+                          while ($proyectosObraNueva->have_posts()){
+                            $proyectosObraNueva->the_post(); ?>
+                            <div class="proyectos--realizados__card">
+                              <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                              <h4>
+                                <a href="<?php the_permalink(); ?>">
+                                  <?php the_title(); ?>
+                                </a>
+                              </h4>
+                              <p><?php echo wp_trim_words(get_the_content(), 18); ?></p>
+                            </div>
+                        <?php }?>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -256,21 +265,24 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                     <div class="proyectos--realizados">
                       <h3>Proyectos Realizados</h3>
                       <div class="proyectos--realizados__slider">
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 1</h4>
-                          <p>Descripcion</p>
-                        </div>
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 2</h4>
-                          <p>Descripcion</p>
-                        </div>
-                        <div class="proyectos--realizados__card">
-                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proyecto 1">
-                          <h4>Proyecto 3</h4>
-                          <p>Descripcion</p>
-                        </div>
+                        <?php
+                          $proyectosObraNueva = new WP_Query(array(
+                            'post_type' => 'proyecto',
+                            'posts_per_page' => 3
+                          ));
+                          
+                          while ($proyectosObraNueva->have_posts()){
+                            $proyectosObraNueva->the_post(); ?>
+                            <div class="proyectos--realizados__card">
+                              <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                              <h4>
+                                <a href="<?php the_permalink(); ?>">
+                                  <?php the_title(); ?>
+                                </a>
+                              </h4>
+                              <p><?php echo wp_trim_words(get_the_content(), 18); ?></p>
+                            </div>
+                          <?php }?>
                       </div>
                     </div>
                   </div>
@@ -285,8 +297,8 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
         <div class="servicios__content">
           <div class="servicios__content--menu">
             <ul>
-              <li><a href="#" data-menu="venta" class="active">Venta</a></li>
-              <li><a href="#" data-menu="arriendos">Arriendos</a></li>
+              <li><a class="tab-link" href="#" data-menu="venta" class="active">Venta</a></li>
+              <li><a class="tab-link" href="#" data-menu="arriendos">Arriendos</a></li>
             </ul>
           </div>
           <div class="servicios__text--container">

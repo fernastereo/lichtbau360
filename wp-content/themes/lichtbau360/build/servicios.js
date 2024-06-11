@@ -35,23 +35,29 @@ const clearActiveLinks = (links) => {
 
 const addEventListenersToLinks = (selector) => {
   const textLinks = document.querySelectorAll(selector);
+
   textLinks.forEach((link) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
       clearActiveLinks(textLinks);
       link.classList.add('active');
 
-      const tabs = document.querySelectorAll(`${selector.split(' ')[0]} .servicios__text`);
+      const tabs = document.querySelectorAll(
+        `${selector.split(' ')[0]} .servicios__text`
+      );
+
       tabs.forEach((tab) => {
         tab.classList.remove('active');
       });
 
-      const tab = document.querySelector(`.servicios__text--${link.dataset.menu}`);
+      const tab = document.querySelector(
+        `.servicios__text--${link.dataset.menu}`
+      );
       tab.classList.add('active');
     });
   });
 };
 
-addEventListenersToLinks('.juridica a');
-addEventListenersToLinks('.proyectos a');
-addEventListenersToLinks('.inmobiliaria a');
+addEventListenersToLinks('.juridica .tab-link');
+addEventListenersToLinks('.proyectos .tab-link');
+addEventListenersToLinks('.inmobiliaria .tab-link');
