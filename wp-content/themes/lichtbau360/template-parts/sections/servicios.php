@@ -139,7 +139,16 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                         <?php
                           $proyectosObraNueva = new WP_Query(array(
                             'post_type' => 'proyecto',
-                            'posts_per_page' => 3
+                            'posts_per_page' => 5,
+                            'meta_key' => 'executed',
+                            'orderby' => 'meta_value_num',
+                            'meta_query' => array(
+                              array(
+                                'key' => 'project_type',
+                                'compare' => '=',
+                                'value' => 'OBRA CIVIL'
+                              )
+                            )
                           ));
                           
                           while ($proyectosObraNueva->have_posts()){
@@ -182,7 +191,16 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                         <?php
                           $proyectosObraNueva = new WP_Query(array(
                             'post_type' => 'proyecto',
-                            'posts_per_page' => 3
+                            'posts_per_page' => 5,
+                            'meta_key' => 'executed',
+                            'orderby' => 'meta_value_num',
+                            'meta_query' => array(
+                              array(
+                                'key' => 'project_type',
+                                'compare' => '=',
+                                'value' => 'ACABADOS'
+                              )
+                            )
                           ));
                           
                           while ($proyectosObraNueva->have_posts()){
@@ -225,7 +243,16 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                         <?php
                           $proyectosObraNueva = new WP_Query(array(
                             'post_type' => 'proyecto',
-                            'posts_per_page' => 3
+                            'posts_per_page' => 5,
+                            'meta_key' => 'executed',
+                            'orderby' => 'meta_value_num',
+                            'meta_query' => array(
+                              array(
+                                'key' => 'project_type',
+                                'compare' => '=',
+                                'value' => 'DISEÑO DE INTERIORES'
+                              )
+                            )
                           ));
                           
                           while ($proyectosObraNueva->have_posts()){
@@ -268,7 +295,16 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                         <?php
                           $proyectosObraNueva = new WP_Query(array(
                             'post_type' => 'proyecto',
-                            'posts_per_page' => 3
+                            'posts_per_page' => 5,
+                            'meta_key' => 'executed',
+                            'orderby' => 'meta_value_num',
+                            'meta_query' => array(
+                              array(
+                                'key' => 'project_type',
+                                'compare' => '=',
+                                'value' => 'REMODELACIONES'
+                              )
+                            )
                           ));
                           
                           while ($proyectosObraNueva->have_posts()){
