@@ -23,6 +23,8 @@ add_action('wp_enqueue_scripts', 'lichtbau360_files');
 function lichtbau360_features(){
   register_nav_menu('headerMenuLocation', 'Header Menu Location');
   add_theme_support('title-tag');
+  add_theme_support('post-thumbnails');
+  add_image_size('projectThumbnail', 276, 308, true);
 }
 
 add_action('after_setup_theme', 'lichtbau360_features');

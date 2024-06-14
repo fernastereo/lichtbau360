@@ -154,7 +154,8 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                           while ($proyectosObraNueva->have_posts()){
                             $proyectosObraNueva->the_post(); ?>
                             <div class="proyectos--realizados__card">
-                              <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                              <?php //the_post_thumbnail('projectThumbnail'); ?>
+                              <img src="<?php the_post_thumbnail_url( 'projectThumbnail' ) ?>" alt="<?php the_title(); ?>">
                               <h4>
                                 <a href="<?php the_permalink(); ?>">
                                   <?php the_title(); ?>
@@ -334,16 +335,128 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
           <div class="servicios__content--menu">
             <ul>
               <li><a class="tab-link" href="#" data-menu="venta" class="active">Venta</a></li>
-              <li><a class="tab-link" href="#" data-menu="arriendos">Arriendos</a></li>
+              <li><a class="tab-link" href="#" data-menu="arriendo">Arriendos</a></li>
             </ul>
           </div>
           <div class="servicios__text--container">
             <div class="servicios__text servicios__text--venta active">
               <h2 class="servicios__text--heading">Venta</h2>
-              <div class="servicios__text--body"></div>
+              <div class="servicios__text--body">
+                <div class="text--body-1">
+                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                  <a class="slide__text-link">Contáctanos</a>
+                  <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
+                </div>
+                <div class="text--body-2">
+                  <div class="proyectos__list--container">
+                    <h2>Explora nuestras opciones</h2>
+                    <p>Dejanos ayudarte a encontrar tu proximo hogar o maximizar el valor de tu propiedad</p>
+                    <hr class="line-break">
+                    <div class="propiedades">
+                      <div class="propiedades__slider">
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="button-container">
+                        <a class="slide__text-link">Ver Todos</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="servicios__text servicios__text--arriendos">
+            <div class="servicios__text servicios__text--arriendo">
               <h2 class="servicios__text--heading">Arriendos</h2>
+              <div class="servicios__text--body">
+                <div class="text--body-1">
+                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                  <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
+                  <a class="slide__text-link">Contáctanos</a>
+                </div>
+                <div class="text--body-2">
+                  <div class="proyectos__list--container">
+                    <h2>Construimos lo que necesites, nos adaptamos a tus necesidades</h2>
+                    <hr style="margin: 0 3rem;">
+                    <div class="propiedades">
+                      <div class="propiedades__slider">
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="button-container">
+                        <a class="slide__text-link">Ver Todos</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
