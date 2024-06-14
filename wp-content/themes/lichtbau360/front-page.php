@@ -57,11 +57,14 @@
   </div>
   <div class="main-message">
     <?php get_template_part('template-parts/components/pilars/pilars', 'pilars', ['container_class_modifier' => 'desktop']); ?>
-
-    <div class="main-message__ellipse"></div>
-    <h2 class="main-message__text">
-      Vive el proceso de forma ligera
-    </h2>
+    <div class="main-message__container">
+      <div class="main-message__container-intro">
+        <div class="main-message__ellipse"></div>
+        <h2 class="main-message__text">
+          Vive el proceso de<br>forma ligera
+        </h2>
+      </div>
+    </div>
   </div>
   <?php get_template_part('template-parts/components/pilars/pilars', 'pilars', ['container_class_modifier' => 'mobile']); ?>
 </section>
