@@ -207,6 +207,20 @@
   overflow: hidden;
 }
 
+.servicios__text--venta .text--body-1,
+.servicios__text--arriendo .text--body-1{
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(to left, rgba(255,255,255,1) 25%,rgba(255,255,255,0) 150%);
+}
+
 .servicios__text--proteccion .image--body-1,
 .servicios__text--tramites .image--body-1,
 .servicios__text--licitaciones .image--body-1{
@@ -236,6 +250,18 @@
   filter: grayscale(60%);
 }
 
+.servicios__text--venta .image--body-1,
+.servicios__text--arriendo .image--body-1{
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-top-right-radius: 90%;
+}
+
 .servicios__text--proteccion .text--body-1 p,
 .servicios__text--tramites .text--body-1 p,
 .servicios__text--licitaciones .text--body-1 p{
@@ -263,6 +289,19 @@
   font-weight: 400;
 }
 
+.servicios__text--venta .text--body-1 p,
+.servicios__text--arriendo .text--body-1 p{
+  width: 100%;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  color: var(--lb_grey-default);
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 1.5rem;
+}
+
+
 .servicios__text--proteccion .text--body-1 a,
 .servicios__text--tramites .text--body-1 a,
 .servicios__text--licitaciones .text--body-1 a{
@@ -278,6 +317,13 @@
   position: absolute;
   right: 3rem;
   margin-top: 6rem;
+}
+
+.servicios__text--venta .text--body-1 a,
+.servicios__text--arriendo .text--body-1 a{
+  position: absolute;
+  right: 3rem;
+  margin-top: -8rem;
 }
 
 .servicios__text--proteccion .text--body-2 h3,
@@ -321,15 +367,33 @@
   margin-top: 2rem;
 }
 
-.servicios__text--proteccion .text--body-2 a,
-.servicios__text--tramites .text--body-2 a,
-.servicios__text--licitaciones .text--body-2 a{
+.servicios__text--venta .text--body-2 .button-container,
+.servicios__text--arriendo .text--body-2 .button-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.servicios__text--proteccion .text--body-2 .slide__text-link,
+.servicios__text--tramites .text--body-2 .slide__text-link,
+.servicios__text--licitaciones .text--body-2 .slide__text-link{
   width: auto;
   padding: 0.6rem 2rem;
   margin: 0 auto;
   color: var(--lb_grey-default);
   background-color: white;
   border-color: var(--lb_grey-dark);
+}
+
+.servicios__text--venta .text--body-2 .slide__text-link,
+.servicios__text--arriendo .text--body-2 .slide__text-link{
+  width: auto;
+  padding: 0.4em 1rem;
+  color: var(--lb_grey-default);
+  background-color: white;
+  border-color: var(--lb_grey-dark);
+  font-size: 0.9rem;
 }
 
 .servicios__text--proteccion .text--body-2 .image-container,
@@ -359,6 +423,12 @@
   padding: 2.5rem 1rem;
 }
 
+.servicios__text--venta .proyectos__list--container,
+.servicios__text--arriendo .proyectos__list--container{
+  background-color: var(--lb_grey-lightest);
+  padding: 2.5rem 0.5rem;
+}
+
 .servicios__text--obra-civil .proyectos__list--container h2,
 .servicios__text--acabados .proyectos__list--container h2,
 .servicios__text--diseno .proyectos__list--container h2,
@@ -368,6 +438,30 @@
   font-weight: 400;
   color: var(--lb_black-default);
   margin-bottom: 1.5rem;
+}
+
+.servicios__text--venta .proyectos__list--container h2,
+.servicios__text--arriendo .proyectos__list--container h2{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+  color: var(--lb_grey-default);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  padding: 0 1rem;
+}
+
+.servicios__text--venta .proyectos__list--container p,
+.servicios__text--arriendo .proyectos__list--container p{
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 2rem;
+  color: var(--lb_grey-default);
+}
+
+.servicios__text--venta .line-break{
+  margin: 1rem 3rem;
 }
 
 .servicios__text--obra-civil .proyectos--realizados, 
@@ -415,7 +509,7 @@
   width: 276px;
   height: 308px;
   object-fit: cover;
-  filter: grayscale(80%);
+  /* filter: grayscale(80%); */
 }
 
 .servicios__text--obra-civil .proyectos--realizados__card h4,
@@ -441,23 +535,79 @@
   padding: 0;
 }
 
+.servicios__text--venta .propiedades,
+.servicios__text--arriendo .propiedades{
+  padding: 1rem 0;
+}
 
+.servicios__text--venta .propiedades > .button-container,
+.servicios__text--arriendo .propiedades > .button-container{
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.propiedades > .button-container .slide__text-link,
+.propiedades > .button-container .slide__text-link{
+  padding: 0.6rem 4rem;
+  font-size: 1rem;
+}
+
+.servicios__text--venta .propiedades__card,
+.servicios__text--arriendo .propiedades__card{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--lb_white-background);
+  margin: 1rem 0;
+}
+
+.servicios__text--venta .propiedades__card img,
+.servicios__text--arriendo .propiedades__card img{
+  width: 135px;
+  height: 148px;
+  object-fit: cover;
+}
+
+.servicios__text--venta .propiedades__card--details,
+.servicios__text--arriendo .propiedades__card--details{
+  width: 100%;
+  padding: 0 0.7rem;
+}
+
+.servicios__text--venta .propiedades__card--details h4,
+.servicios__text--arriendo .propiedades__card--details h4{
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: var(--lb_grey-default);
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.servicios__text--venta .propiedades__card--details p,
+.servicios__text--arriendo .propiedades__card--details p{
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: var(--lb_grey-default);
+  font-weight: 400;
+  text-align: justify;
+  padding: 0;
+}  
 /* End Styles inner content for Services (servicios__text) */
 
 /* Media queries for desktop */
 @media(min-width: 768px){
-.servicios{
-  padding: 6rem 0;
-}
+  .servicios{
+    padding: 6rem 0;
+  }
 
-.servicios-sub-header{
-  display: block;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
+  .servicios-sub-header{
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
 
-.servicios__content--menu ul{
-  width: 100%;
-}
+  .servicios__content--menu ul{
+    width: 100%;
+  }
 }
