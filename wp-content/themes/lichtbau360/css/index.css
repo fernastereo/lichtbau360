@@ -86,16 +86,20 @@
     display: none;
   }
 
-  .main-message{
-    right: -5rem;
-    position: absolute;
+  .main-message__container{
+    display: flex;
+    justify-content: center;
   }
+
+  .main-message__container-intro{
+    width: 50%;
+  }
+
 
   .main-message__text{
     font-size: 3rem;
-    width: 65%;
     text-align: center;
-    top: -4rem;
+    top: -3.5rem;
   }
 
   .pilars--mobile{
@@ -104,6 +108,11 @@
 
   .pilars--desktop{
     display: flex;
-    width: 50%;
+  }
+}
+
+@media(min-width: 1130px){
+  .main-message__container-intro{
+    width: 35%;
   }
 }
