@@ -24,19 +24,22 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
         <div class="servicios__content">
           <div class="servicios__content--menu">
             <ul>
-              <li><a class="tab-link" href="#" data-menu="proteccion" class="active">Proteccion Legal</a></li>
-              <li><a class="tab-link" href="#" data-menu="tramites">Tramites</a></li>
+              <li><a class="tab-link" href="#" data-menu="proteccion" class="active">Protección Legal</a></li>
+              <li><a class="tab-link" href="#" data-menu="tramites">Trámites</a></li>
               <li><a class="tab-link" href="#" data-menu="licitaciones">Licitaciones</a></li>
             </ul>
           </div>
           <div class="servicios__text--container">
             <div class="servicios__text servicios__text--proteccion active">
-              <h2 class="servicios__text--heading">Proteccion Legal</h2>
+              <h2 class="servicios__text--heading-mobile">Protección Legal</h2>
               <div class="servicios__text--body">
                 <div class="text--body-1">
                   <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
-                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
-                  <a class="slide__text-link">Contáctanos</a>
+                  <div class="details--body-1">
+                    <h2 class="servicios__text--heading-desktop">Protección Legal</h2>
+                    <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                    <a class="slide__text-link">Contáctanos</a>
+                  </div>
                 </div>
                 <div class="text--body-2">
                   <h3>Contratos (Proteccion Legal)</h3>
@@ -55,12 +58,15 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
               </div>
             </div>
             <div class="servicios__text servicios__text--tramites">
-              <h2 class="servicios__text--heading">Tramites</h2>
+              <h2 class="servicios__text--heading-mobile">Trámites</h2>
               <div class="servicios__text--body">
                 <div class="text--body-1">
                   <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="Proteccion Legal">
-                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
-                  <a class="slide__text-link">Contáctanos</a>
+                  <div class="details--body-1">
+                    <h2 class="servicios__text--heading-desktop">Trámites</h2>
+                    <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                    <a class="slide__text-link">Contáctanos</a>
+                  </div>
                 </div>
                 <div class="text--body-2">
                   <h3>Contratos (Tramites)</h3>
@@ -79,12 +85,15 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
               </div>
             </div>
             <div class="servicios__text servicios__text--licitaciones">
-              <h2 class="servicios__text--heading">Licitaciones</h2>
+              <h2 class="servicios__text--heading-mobile">Licitaciones</h2>
               <div class="servicios__text--body">
                 <div class="text--body-1">
                   <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/licitaciones.jpg" alt="Proteccion Legal">
-                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
-                  <a class="slide__text-link">Contáctanos</a>
+                  <div class="details--body-1">
+                    <h2 class="servicios__text--heading-desktop">Licitaciones</h2>
+                    <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                    <a class="slide__text-link">Contáctanos</a>
+                  </div>
                 </div>
                 <div class="text--body-2">
                   <h3>Contratos (Licitaciones)</h3>
@@ -112,18 +121,21 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
             <ul>
               <li><a class="tab-link" href="#" data-menu="obra-civil" class="active">Obra Civil</a></li>
               <li><a class="tab-link" href="#" data-menu="acabados">Acabados</a></li>
-              <li><a class="tab-link" href="#" data-menu="diseno">Diseno de Interiores</a></li>
+              <li><a class="tab-link" href="#" data-menu="diseno">Diseño de Interiores</a></li>
               <li><a class="tab-link" href="#" data-menu="remodelaciones">Remodelaciones</a></li>
             </ul>
           </div>
           <div class="servicios__text--container">
             <div class="servicios__text servicios__text--obra-civil active">
-              <h2 class="servicios__text--heading">Obra Civil</h2>
+              <h2 class="servicios__text--heading-mobile">Obra Civil</h2>
               <div class="servicios__text--body">
                 <div class="text--body-1">
                   <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
-                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
-                  <a class="slide__text-link">Contáctanos</a>
+                  <div class="details--body-1">
+                    <h2 class="servicios__text--heading-desktop">Obra Civil</h2>
+                    <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                    <a class="slide__text-link">Contáctanos</a>
+                  </div>
                 </div>
                 <div class="text--body-2">
                   <h3>Desde cero</h3>
@@ -171,12 +183,15 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
               </div>
             </div>
             <div class="servicios__text servicios__text--acabados">
-              <h2 class="servicios__text--heading">Acabados</h2>
+              <h2 class="servicios__text--heading-mobile">Acabados</h2>
               <div class="servicios__text--body">
                 <div class="text--body-1">
                   <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
-                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
-                  <a class="slide__text-link">Contáctanos</a>
+                  <div class="details--body-1">
+                    <h2 class="servicios__text--heading-desktop">Acabados</h2>
+                    <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                    <a class="slide__text-link">Contáctanos</a>
+                  </div>
                 </div>
                 <div class="text--body-2">
                   <h3>Desde cero</h3>
@@ -223,12 +238,15 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
               </div>
             </div>
             <div class="servicios__text servicios__text--diseno">
-              <h2 class="servicios__text--heading">Diseño de Interiores</h2>
+              <h2 class="servicios__text--heading-mobile">Diseño de Interiores</h2>
               <div class="servicios__text--body">
                 <div class="text--body-1">
                   <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
-                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
-                  <a class="slide__text-link">Contáctanos</a>
+                  <div class="details--body-1">
+                    <h2 class="servicios__text--heading-desktop">Diseño de Interiores</h2>
+                    <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                    <a class="slide__text-link">Contáctanos</a>
+                  </div>
                 </div>
                 <div class="text--body-2">
                   <h3>Desde cero</h3>
@@ -275,12 +293,15 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
               </div>
             </div>            
             <div class="servicios__text servicios__text--remodelaciones">
-              <h2 class="servicios__text--heading">Remodelaciones</h2>
+              <h2 class="servicios__text--heading-mobile">Remodelaciones</h2>
               <div class="servicios__text--body">
                 <div class="text--body-1">
                   <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
-                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
-                  <a class="slide__text-link">Contáctanos</a>
+                  <div class="details--body-1">
+                    <h2 class="servicios__text--heading-desktop">Remodelaciones</h2>
+                    <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                    <a class="slide__text-link">Contáctanos</a>
+                  </div>
                 </div>
                 <div class="text--body-2">
                   <h3>Desde cero</h3>
@@ -330,7 +351,7 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
         </div>
       </div>
       <div class="servicios--slide inmobiliaria">
-        <h2 class="servicios__title">Gestion Inmobiliaria</h2>
+        <h2 class="servicios__title">Gestión Inmobiliaria</h2>
         <div class="servicios__content">
           <div class="servicios__content--menu">
             <ul>
@@ -340,11 +361,14 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
           </div>
           <div class="servicios__text--container">
             <div class="servicios__text servicios__text--venta active">
-              <h2 class="servicios__text--heading">Venta</h2>
+              <h2 class="servicios__text--heading-mobile">Venta</h2>
               <div class="servicios__text--body">
                 <div class="text--body-1">
-                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
-                  <a class="slide__text-link">Contáctanos</a>
+                  <div class="details--body-1">
+                    <h2 class="servicios__text--heading-desktop">Venta</h2>
+                    <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                    <a class="slide__text-link">Contáctanos</a>
+                  </div>
                   <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
                 </div>
                 <div class="text--body-2">
@@ -354,6 +378,78 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
                     <hr class="line-break">
                     <div class="propiedades">
                       <div class="propiedades__slider">
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="propiedades__card">
+                          <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
+                          <div class="propiedades__card--details">
+                            <h4><a href="#">Casa 1</a></h4>
+                            <p>Barranquilla</p>
+                            <p>Riomar</p>
+                            <p>380.000.000</p>
+                            <div class="button-container">
+                              <a class="slide__text-link">Ver Más</a>
+                            </div>
+                          </div>
+                        </div>
                         <div class="propiedades__card">
                           <img src="<?php echo get_template_directory_uri() ?>/images/tramites.jpg" alt="<?php the_title(); ?>">
                           <div class="propiedades__card--details">
@@ -400,12 +496,15 @@ $parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : ''
               </div>
             </div>
             <div class="servicios__text servicios__text--arriendo">
-              <h2 class="servicios__text--heading">Arriendos</h2>
+              <h2 class="servicios__text--heading-mobile">Arriendos</h2>
               <div class="servicios__text--body">
                 <div class="text--body-1">
-                  <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                  <div class="details--body-1">
+                    <h2 class="servicios__text--heading-desktop">Arriendos</h2>
+                    <p>Diseñamos tus espacios de tu sueños, para que dese la estructura hasta las los detalles sean lo que deseas.</p>
+                    <a class="slide__text-link">Contáctanos</a>
+                  </div>
                   <img class="image--body-1" src="<?php echo get_template_directory_uri() ?>/images/proteccion-legal.jpeg" alt="Proteccion Legal">
-                  <a class="slide__text-link">Contáctanos</a>
                 </div>
                 <div class="text--body-2">
                   <div class="proyectos__list--container">
