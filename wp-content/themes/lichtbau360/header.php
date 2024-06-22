@@ -38,7 +38,7 @@
           ]) ?>
       </div>
       
-      <?php get_template_part('template-parts/components/language-switcher/language', 'switcher', ['container_class_modifier' => 'header']) ?>
+      <?php get_template_part('template-parts/components/language-switcher/lb', 'language-switcher', ['container_class_modifier' => 'header']) ?>
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
