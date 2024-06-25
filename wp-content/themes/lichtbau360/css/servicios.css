@@ -24,7 +24,7 @@
 }
 
 .servicios--slides {
-  height: 170vh;
+  height: 185vh;
 }
 
 .servicios--slide {
@@ -310,6 +310,13 @@
   padding-bottom: 2rem;
 }
 
+.servicios__text--obra-civil .text--body-1 p:nth-child(3),
+.servicios__text--acabados .text--body-1 p:nth-child(3),
+.servicios__text--diseno .text--body-1 p:nth-child(3),
+.servicios__text--remodelaciones .text--body-1 p:nth-child(3){
+  display: none;
+}
+
 .servicios__text--venta .text--body-1 p,
 .servicios__text--arriendo .text--body-1 p{
   width: 100%;
@@ -510,7 +517,7 @@
 .servicios__text--diseno .proyectos--realizados__card,
 .servicios__text--remodelaciones .proyectos--realizados__card{
   width: 276px;
-  height: 382px;
+  height: 395px;
   background-color: var(--lb_white-background);
   padding: 0;
 }
@@ -556,7 +563,7 @@
 .servicios__text--venta .propiedades > .button-container,
 .servicios__text--arriendo .propiedades > .button-container{
   justify-content: center;
-  margin-top: 1.5rem;
+  margin-top: -55rem;
 }
 
 .propiedades > .button-container .slide__text-link,
@@ -677,6 +684,13 @@
     font-size: 2.5rem;
   }
 
+  .servicios__text--venta .propiedades > .button-container,
+  .servicios__text--arriendo .propiedades > .button-container{
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+
   .servicios__text--proteccion .text--body-1,
   .servicios__text--tramites .text--body-1,
   .servicios__text--licitaciones .text--body-1,
@@ -688,6 +702,13 @@
     height: 32rem;
     display: block;
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 0) 150%);
+  }
+
+  .servicios__text--obra-civil .text--body-1 p,
+  .servicios__text--acabados .text--body-1 p,
+  .servicios__text--diseno .text--body-1 p,
+  .servicios__text--remodelaciones .text--body-1 p{
+    width: 75%;
   }
 
   .servicios__text--venta .text--body-1,
@@ -748,6 +769,13 @@
     height: 100%;
     gap: 1rem;
     padding-left: 6rem;
+  }
+
+  .servicios__text--obra-civil .text--body-1 p:nth-child(3),
+  .servicios__text--acabados .text--body-1 p:nth-child(3),
+  .servicios__text--diseno .text--body-1 p:nth-child(3),
+  .servicios__text--remodelaciones .text--body-1 p:nth-child(3){
+    display: block;
   }
 
   .servicios__text--proteccion .text--body-2 .image-container,

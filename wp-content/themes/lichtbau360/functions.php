@@ -25,6 +25,7 @@ function lichtbau360_features(){
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   add_image_size('projectThumbnail', 276, 308, true);
+  add_image_size('propertyThumbnail', 135, 148, true);
 }
 
 add_action('after_setup_theme', 'lichtbau360_features');
