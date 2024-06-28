@@ -1,5 +1,5 @@
 .hero {
-  height: 20rem;
+  height: 34.62rem;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -41,5 +41,5 @@
   align-items: center;
   margin: 0 auto;
   position: absolute;
-  top: 17.5rem;
+  top: 32.5rem;
 }
