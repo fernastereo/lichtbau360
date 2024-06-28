@@ -24,7 +24,7 @@
 }
 
 .servicios--slides {
-  height: 185vh;
+  height: 195vh;
 }
 
 .servicios--slide {
@@ -670,7 +670,7 @@
   }
 
   .servicios--slides {
-    height: 165vh;
+    height: 125vh;
   }  
 
   .servicios__text--heading-mobile{
@@ -810,6 +810,6 @@
 
   .propiedades__slider {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
   }
 }
