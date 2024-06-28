@@ -56,7 +56,7 @@
     <h3>Con nuestra asesoría experta, podrás contar un equipo altamente calificado y un acompañamiento integral de inicio a fin.</h3>
   </div>
   <div class="main-message">
-    <?php get_template_part('template-parts/components/pilars/pilars/lb', 'pilars', ['container_class_modifier' => 'desktop']); ?>
+    <?php get_template_part('template-parts/components/pilars/lb', 'pilars', ['container_class_modifier' => 'desktop']); ?>
     <div class="main-message__container">
       <div class="main-message__container-intro">
         <div class="main-message__ellipse"></div>
@@ -66,7 +66,8 @@
       </div>
     </div>
   </div>
-  <?php get_template_part('template-parts/components/pilars/pilars/lb', 'pilars', ['container_class_modifier' => 'mobile']); ?>
+  <?php get_template_part('template-parts/components/pilars/lb', 'pilars', ['container_class_modifier' => 'mobile']); ?>
 </section>
 <?php get_template_part('template-parts/sections/lb', 'servicios', ['parametro1' => 'valor1', 'parametro2' => 'valor2']); ?>
+<?php get_template_part('template-parts/sections/lb', 'contacto', ['parametro1' => 'valor1', 'parametro2' => 'valor2']); ?>
 <?php get_footer()?> 
