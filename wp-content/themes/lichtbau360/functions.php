@@ -13,7 +13,7 @@ function lichtbau360_files() {
   wp_enqueue_style('lichtbau360_servicios_styles', get_theme_file_uri('/css/servicios.css'));
   wp_enqueue_style('lichtbau360_contacto_styles', get_theme_file_uri('/css/contacto.css'));
   wp_enqueue_style('lichtbau360_nosotros_styles', get_theme_file_uri('/css/nosotros.css'));
-  
+
   wp_enqueue_script('lichtbau360_menu_js', get_theme_file_uri('/build/menu.js'), NULL, '1.0', true);
   wp_enqueue_script('lichtbau360_language_switcher_js', get_theme_file_uri('/build/language_switcher.js'), NULL, '1.0', true);
   wp_enqueue_script('lichtbau360_slider_js', get_theme_file_uri('/build/slider.js'), array('jquery'), '1.0', true);
@@ -29,6 +29,10 @@ function lichtbau360_features(){
   add_theme_support('post-thumbnails');
   add_image_size('projectThumbnail', 276, 308, true);
   add_image_size('propertyThumbnail', 135, 148, true);
+  add_image_size('nosotrosGallery_sm', 382, 538, true);
+  add_image_size('nosotrosGallery_lg', 382, 400, true);
+  add_image_size('filosofiaCard', 276, 216, true);
+  add_image_size('colaboradorCard', 208, 208, true);
 }
 
 add_action('after_setup_theme', 'lichtbau360_features');

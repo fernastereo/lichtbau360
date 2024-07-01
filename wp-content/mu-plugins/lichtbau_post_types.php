@@ -36,6 +36,24 @@ function lichtbau360_post_types() {
     'taxonomies' => array('category')
   ));
 
+  register_post_type('colaborador', array(
+    'supports' => array('title', 'thumbnail'),
+    'rewrite' => array('slug' => 'colaboradores'),
+    'has_archive' => true,
+    'public' => true,
+    'show_in_rest' => true,
+    'labels' => array(
+      'name' => 'Colaboradores',
+      'add_new_item' => 'Nuevo Colaborador',
+      'edit_item' => 'Editar Colaborador',
+      'all_items' => 'Todos las Colaboradores',
+      'singular_name' => 'Colaborador'
+    ),
+    'menu_icon' => 'dashicons-groups',
+    'supports' => array('title', 'editor', 'thumbnail'),
+    'taxonomies' => array('category')
+  ));
+
 }
 add_action('init', 'lichtbau360_post_types');
 ?>
