@@ -11,7 +11,8 @@ html {
 
 .intro{
   height: 25rem;
-  margin: 4rem auto;
+  padding: 4rem 0;
+  background-color: var(--lb_white-background);
 }
 
 .intro-content{
@@ -19,7 +20,8 @@ html {
 }
 
 .intro-content h3{
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   font-weight: 500;
   color: var(--lb_grey-default);
   margin: 1rem 4rem;
@@ -82,8 +84,7 @@ html {
 
 @media(min-width: 768px){
   .intro{
-    margin-top: 6rem;
-    height: 19rem;
+    height: 22rem;
   }
 
   .intro-content{
