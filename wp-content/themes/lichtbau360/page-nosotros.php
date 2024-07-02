@@ -3,6 +3,7 @@
   $contentPilares = get_field('nuestros_pilares');
   $contentFilosofia = get_field('nuestra_filosofia');
   $contentMisionVision = get_field('mision_vision');
+  $contentFooter = get_field('pie_de_pagina');
 
   $subTitulo1 = $contentPilares['subtitulo_1'];
   $subTitulo2 = $contentPilares['subtitulo_2'];
@@ -27,6 +28,9 @@
 
   $mision = $contentMisionVision['mision'];
   $vision = $contentMisionVision['vision'];
+
+  $imagenFooter = $contentFooter['imagen'];
+  $textoFooter = $contentFooter['texto'];
 
   get_header();
   get_template_part('template-parts/components/hero/lb', 'hero') ?>
@@ -144,10 +148,6 @@
       .mision-vision__background-image {
         background-image: none;
       }
-
-      .mision-vision-body > .pilars--mobile{
-        background-image: url('<?= esc_url($imagenPilares['sizes']['medium']); ?>');
-      }
     }
     @media (min-width: 768px) {
       .mision-vision__background-image {
@@ -164,12 +164,23 @@
           <h2>Misión</h2>
           <p><?= $mision ?></p>
         </div>
-        <?php get_template_part('template-parts/components/pilars/lb', 'pilars', ['container_class_modifier' => 'mobile']); ?>
+        <div class="mision-vision__mobile-image">
+          <img src="<?= esc_url($imagenPilares['sizes']['medium']); ?>" alt="">
+          <?php get_template_part('template-parts/components/pilars/lb', 'pilars', ['container_class_modifier' => 'mobile']); ?>
+        </div>
         <div class="mision-vision-wrapper__vision">
           <h2>Visión</h2>
           <p><?= $vision ?></p>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="footer-image-wrapper" >
+    <img src="<?= esc_url($imagenFooter['sizes']['large']); ?>" alt="">
+    <div class="footer-image__content">
+      <h2><?= $textoFooter ?></h2>
+      <a href="/#contacto">Contáctanos</a>
     </div>
   </div>
 
