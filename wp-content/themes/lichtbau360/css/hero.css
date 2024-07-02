@@ -9,7 +9,6 @@
 
 .hero-image{
   height: 2.813rem;
-  width: 17.5rem;
 }
 
 .hero-content {
@@ -42,4 +41,10 @@
   margin: 0 auto;
   position: absolute;
   top: 32.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-image {
+    height: 4.813rem;
+  }
 }

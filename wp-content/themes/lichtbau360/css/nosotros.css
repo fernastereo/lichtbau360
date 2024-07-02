@@ -8,9 +8,9 @@
 
 .container-nosotros > p{
   padding: 0 3.5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: justify;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 
 .nosotros-wrapper {
@@ -152,6 +152,8 @@
   text-align: justify;
   font-weight: 400;
   color: var(--lb_grey-default);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }
 
 .pilares-wrapper__description > p:nth-child(3){
@@ -173,7 +175,8 @@
 
 .filosofia-wrapper__details > p{
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   text-align: justify;
   color: var(--lb_grey-default);
   padding: 0 3rem;
@@ -276,7 +279,8 @@
 
 .equipo-wrapper__details > p{
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
   text-align: justify;
   color: var(--lb_grey-default);
   padding: 0 3rem;
@@ -311,19 +315,19 @@
 }
 
 .equipo-wrapper__card .card-details > h3{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--lb_grey-default);
 }
 
 .equipo-wrapper__card > .card-details > p{
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--lb_grey-default);
 }
 
 .equipo-wrapper__card > .card-details > a{
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--lb_grey-default);
   text-decoration: underline;
@@ -375,9 +379,10 @@
 .mision-vision-wrapper__mision p,
 .mision-vision-wrapper__vision p{
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 400;
   padding-top: 1rem;
+  line-height: 1.4rem;
 }
 
 .mision-vision-wrapper__mision p{
@@ -474,6 +479,10 @@
     background-color: var(--lb_yellow-midlight);
   }
 
+  .pilares-wrapper__subheading {
+    font-size: 2.5rem;
+  }
+
   .pilares-wrapper__description{
     padding-left: 9rem;
     margin: 1rem 0;
@@ -518,7 +527,8 @@
 
   .filosofia-wrapper__body {
     justify-content: center;
-
+    padding: 2rem 1rem 2rem 1rem;
+    gap: 3rem;
   }
 
   .banner-wrapper{
@@ -622,6 +632,12 @@
   .mision-vision-wrapper__mision,
   .mision-vision-wrapper__vision{
     flex: 0 50%;
+  }
+
+  .mision-vision-wrapper__mision p,
+  .mision-vision-wrapper__vision p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
   }
 
   .mision-vision-wrapper__mision p{
