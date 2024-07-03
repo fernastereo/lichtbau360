@@ -1,4 +1,8 @@
-<?php get_header() ?>
+<?php 
+
+$slides = get_field('slider_principal');
+
+get_header() ?>
 
 <main>
   <div class="slider">
@@ -14,10 +18,15 @@
         </div>
         <div class="slide__content">
           <div class="slide__text">
-            <h2 class="slide__text-heading">Proyectando tus sueños</h2>
-            <p class="slide__text-desc">Acompañamiento integral para todos tus proyectos.</p>
-            <p class="slide__text-content">Desarrollamos Proyectos, Asesoramos Jurídicamente y te Acompañamos Comercialmente, con nuestra asesoría experta, podrás contar un equipo altamente calificado y un acompañamiento integral de inicio a fin.</p>
-            <a class="slide__text-link">Contáctanos</a>
+            <?php 
+              $headingSlide = $slides['slide_1']['titulo'];
+              $subHeadingSlide = $slides['slide_1']['subtitulo'];
+              $messageSlide = $slides['slide_1']['mensaje'];
+            ?>
+            <h2 class="slide__text-heading"><?= esc_attr($headingSlide) ?></h2>
+            <p class="slide__text-desc"><?= esc_attr($subHeadingSlide) ?></p>
+            <p class="slide__text-content"><?= esc_attr($messageSlide) ?></p>
+            <a heref="/#contacto" class="slide__text-link">Contáctanos</a>
           </div>
         </div>
       </div>
@@ -27,10 +36,15 @@
         </div>
         <div class="slide__content">
           <div class="slide__text">
-            <h2 class="slide__text-heading">Proyectando tus sueños</h2>
-            <p class="slide__text-desc">Acompañamiento integral para todos tus proyectos.</p>
-            <p class="slide__text-content">Desarrollamos Proyectos, Asesoramos Jurídicamente y te Acompañamos Comercialmente, con nuestra asesoría experta, podrás contar un equipo altamente calificado y un acompañamiento integral de inicio a fin.</p>
-            <a class="slide__text-link">Contáctanos</a>
+            <?php 
+              $headingSlide = $slides['slide_2']['titulo'];
+              $subHeadingSlide = $slides['slide_2']['subtitulo'];
+              $messageSlide = $slides['slide_2']['mensaje'];
+            ?>
+            <h2 class="slide__text-heading"><?= esc_attr($headingSlide) ?></h2>
+            <p class="slide__text-desc"><?= esc_attr($subHeadingSlide) ?></p>
+            <p class="slide__text-content"><?= esc_attr($messageSlide) ?></p>
+            <a heref="/#contacto" class="slide__text-link">Contáctanos</a>
           </div>
         </div>
       </div>
@@ -40,10 +54,15 @@
         </div>
         <div class="slide__content">
           <div class="slide__text">
-            <h2 class="slide__text-heading">Proyectando tus sueños</h2>
-            <p class="slide__text-desc">Acompañamiento integral para todos tus proyectos.</p>
-            <p class="slide__text-content">Desarrollamos Proyectos, Asesoramos Jurídicamente y te Acompañamos Comercialmente, con nuestra asesoría experta, podrás contar un equipo altamente calificado y un acompañamiento integral de inicio a fin.</p>
-            <a class="slide__text-link">Contáctanos</a>
+            <?php 
+              $headingSlide = $slides['slide_3']['titulo'];
+              $subHeadingSlide = $slides['slide_3']['subtitulo'];
+              $messageSlide = $slides['slide_3']['mensaje'];
+            ?>
+            <h2 class="slide__text-heading"><?= esc_attr($headingSlide) ?></h2>
+            <p class="slide__text-desc"><?= esc_attr($subHeadingSlide) ?></p>
+            <p class="slide__text-content"><?= esc_attr($messageSlide) ?></p>
+            <a heref="/#contacto" class="slide__text-link">Contáctanos</a>
           </div>
         </div>
       </div>
