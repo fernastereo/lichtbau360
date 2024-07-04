@@ -6,11 +6,11 @@ $switcher_output = sprintf('<div class="%s">', $container_class);
 $switcher_output_superior = $switcher_output_inferior = '';
 $languages = [
   'es' => 'Español',
-  'en' => 'English',
-  'de' => 'Deutsch',
-  'fr' => 'Français',
-  'it' => 'Italiano',
-  'pl' => 'Polski',
+  // 'en' => 'English',
+  // 'de' => 'Deutsch',
+  // 'fr' => 'Français',
+  // 'it' => 'Italiano',
+  // 'pl' => 'Polski',
 ];
 
 foreach ($languages as $language => $title) {

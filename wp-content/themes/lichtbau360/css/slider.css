@@ -136,7 +136,7 @@
 .slide__text-heading {
   font-size: 3.2rem;
   margin-bottom: 1rem;
-  width: 50%;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
