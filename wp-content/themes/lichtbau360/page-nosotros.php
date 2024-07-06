@@ -41,17 +41,17 @@
 
   <div class="nosotros-wrapper">
     <div class="nosotros-hero">
-      <div class="nosotros-hero__box1" style="background-image: url(<?= $imagenes_intro['imagen_1']['sizes']['nosotrosGallery_lg'] ?>);">
+      <div class="nosotros-hero__box1" style="background-image: url(<?= $imagenes_intro['imagen_1']['sizes']['nosotrosGallery_1'] ?>);">
       </div>
-      <div class="nosotros-hero__box2" style="background-image: url(<?= $imagenes_intro['imagen_2']['sizes']['nosotrosGallery_sm'] ?>);">
+      <div class="nosotros-hero__box2" style="background-image: url(<?= $imagenes_intro['imagen_2']['sizes']['nosotrosGallery_2'] ?>);">
       </div>
-      <div class="nosotros-hero__box3" style="background-image: url(<?= $imagenes_intro['imagen_3']['sizes']['nosotrosGallery_lg'] ?>);">
+      <div class="nosotros-hero__box3" style="background-image: url(<?= $imagenes_intro['imagen_3']['sizes']['nosotrosGallery_3'] ?>);">
       </div>
-      <div class="nosotros-hero__box4" style="background-image: url(<?= $imagenes_intro['imagen_4']['sizes']['nosotrosGallery_sm'] ?>);">
+      <div class="nosotros-hero__box4" style="background-image: url(<?= $imagenes_intro['imagen_4']['sizes']['nosotrosGallery_4'] ?>);">
       </div>
-      <div class="nosotros-hero__box5" style="background-image: url(<?= $imagenes_intro['imagen_5']['sizes']['nosotrosGallery_lg'] ?>);">
+      <div class="nosotros-hero__box5" style="background-image: url(<?= $imagenes_intro['imagen_5']['sizes']['nosotrosGallery_5'] ?>);">
       </div>
-      <div class="nosotros-hero__box6" style="background-image: url(<?= $imagenes_intro['imagen_6']['sizes']['nosotrosGallery_sm'] ?>);">
+      <div class="nosotros-hero__box6" style="background-image: url(<?= $imagenes_intro['imagen_6']['sizes']['nosotrosGallery_6'] ?>);">
       </div>
     </div>
   </div>

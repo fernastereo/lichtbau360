@@ -29,8 +29,12 @@ function lichtbau360_features(){
   add_theme_support('post-thumbnails');
   add_image_size('projectThumbnail', 276, 308, true);
   add_image_size('propertyThumbnail', 135, 148, true);
-  add_image_size('nosotrosGallery_sm', 382, 538, true);
-  add_image_size('nosotrosGallery_lg', 382, 400, true);
+  add_image_size('nosotrosGallery_1', 380, 520, true);
+  add_image_size('nosotrosGallery_2', 380, 320, true);
+  add_image_size('nosotrosGallery_3', 380, 336, true);
+  add_image_size('nosotrosGallery_4', 380, 544, true);
+  add_image_size('nosotrosGallery_5', 380, 585, true);
+  add_image_size('nosotrosGallery_6', 380, 448, true);
   add_image_size('filosofiaCard', 276, 216, true);
   add_image_size('colaboradorCard', 208, 208, true);
   add_image_size('serviciosSlide', 688, 688, true);
