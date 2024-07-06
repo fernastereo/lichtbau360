@@ -1,24 +1,40 @@
 const servicesSlides = document.querySelectorAll('.servicios--slide');
-const juridica = document.querySelector('.servicios--slide.juridica');
-const proyectos = document.querySelector('.servicios--slide.proyectos');
-const inmobiliaria = document.querySelector('.servicios--slide.inmobiliaria');
+const juridica = document.querySelector('.servicios--slide.slide-1');
+const proyectos = document.querySelector('.servicios--slide.slide-2');
+const inmobiliaria = document.querySelector('.servicios--slide.slide-3');
 
-const transformSlides = (juridicaTransform, proyectosTransform, inmobiliariaTransform) => {
+const transformSlides = (
+  juridicaTransform,
+  proyectosTransform,
+  inmobiliariaTransform
+) => {
   juridica.style.transform = juridicaTransform;
   proyectos.style.transform = proyectosTransform;
   inmobiliaria.style.transform = inmobiliariaTransform;
 };
 
 const showJuridica = () => {
-  transformSlides('translate(0%, 0%)', 'translate(100%, -100%)', 'translate(200%, -200%)');
+  transformSlides(
+    'translate(0%, 0%)',
+    'translate(100%, 0%)',
+    'translate(200%, 0%)'
+  );
 };
 
 const showProyectos = () => {
-  transformSlides('translate(-100%, 0%)', 'translate(0%, -100%)', 'translate(100%, -200%)');
+  transformSlides(
+    'translate(-100%, 0%)',
+    'translate(0%, 0%)',
+    'translate(100%, 0%)'
+  );
 };
 
 const showInmobiliaria = () => {
-  transformSlides('translate(-200%, 0%)', 'translate(-100%, -100%)', 'translate(0%, -200%)');
+  transformSlides(
+    'translate(-200%, 0%)',
+    'translate(-100%, 0%)',
+    'translate(0%, 0%)'
+  );
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -43,7 +59,7 @@ const addEventListenersToLinks = (selector) => {
       link.classList.add('active');
 
       const tabs = document.querySelectorAll(
-        `${selector.split(' ')[0]} .servicios__text`
+        `${selector.split(' ')[0]} .servicio-wrapper`
       );
 
       tabs.forEach((tab) => {
@@ -51,13 +67,13 @@ const addEventListenersToLinks = (selector) => {
       });
 
       const tab = document.querySelector(
-        `.servicios__text--${link.dataset.menu}`
+        `.servicio-wrapper--${link.dataset.menu}`
       );
       tab.classList.add('active');
     });
   });
 };
 
-addEventListenersToLinks('.juridica .tab-link');
-addEventListenersToLinks('.proyectos .tab-link');
-addEventListenersToLinks('.inmobiliaria .tab-link');
+addEventListenersToLinks('.slide-1 .tab-link');
+addEventListenersToLinks('.slide-2 .tab-link');
+addEventListenersToLinks('.slide-3 .tab-link');

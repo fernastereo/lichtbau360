@@ -33,7 +33,7 @@ function lichtbau360_features(){
   add_image_size('nosotrosGallery_lg', 382, 400, true);
   add_image_size('filosofiaCard', 276, 216, true);
   add_image_size('colaboradorCard', 208, 208, true);
-  add_image_size('serviciosSlide', 512, 512, true);
+  add_image_size('serviciosSlide', 688, 688, true);
 }
 
 add_action('after_setup_theme', 'lichtbau360_features');

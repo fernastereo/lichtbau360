@@ -24,25 +24,26 @@
 }
 
 .servicios--slides {
-  height: 195vh;
+  position: relative;
+  height: 115rem;
 }
 
 .servicios--slide {
+  position: absolute;
   width: 100%;
   height: 100%;
   transition: transform 0.8s ease-in-out;
-  /* border: 1px solid greenyellow; */
 }
 
-.servicios--slide.juridica{
+.servicios--slide.slide-1{
   transform: translate(-100%, 0%);
 }
 
-.servicios--slide.proyectos{
+.servicios--slide.slide-2{
   transform: translate(0%, -100%);
 }
 
-.servicios--slide.inmobiliaria{
+.servicios--slide.slide-3{
   transform: translate(100%, -200%);
 }
 
@@ -62,6 +63,7 @@
   fill: var(--lb_grey-default);
   transition: all 0.3s ease-in-out;
 }
+
 .servicios--icon:hover,
 .servicios--icon.active{
   transform: scale(1.1);
@@ -156,7 +158,7 @@
 
 
 /* Styles inner content for Services (servicios__text) */
-.servicios__text{
+.servicio-wrapper{
   position: absolute;
   opacity: 0;
   visibility: hidden;
@@ -164,250 +166,92 @@
   width: 100%;
 }
 
-.servicios__text.active{
+.servicio-wrapper.active{
   opacity: 1;
   visibility: visible;
 }
 
-.servicios__text--heading-mobile,
-.servicios__text--heading-desktop{
+.servicio-wrapper--heading-mobile,
+.servicio-wrapper--heading-desktop{
   text-align: center;
   font-size: 2.2rem;
   padding: 1rem 0;
   color: var(--lb_grey-light);
 }
 
-.servicios__text--heading-desktop{
+.servicio-wrapper--heading-desktop{
   display: none;
 }
 
-.servicios__text--proteccion .text--body-1,
-.servicios__text--tramites .text--body-1,
-.servicios__text--licitaciones .text--body-1{
-  position: relative;
-  width: 100%;
-  height: 15.75rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  background: linear-gradient(to right, rgba(255,255,255,1) 25%,rgba(255,255,255,0) 150%);
-}
-
-.servicios__text--obra-civil .text--body-1,
-.servicios__text--acabados .text--body-1,
-.servicios__text--diseno .text--body-1,
-.servicios__text--remodelaciones .text--body-1{
-  position: relative;
-  width: 100%;
-  height: 15.75rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.servicio-wrapper{
+  /* position: relative; */
   overflow: hidden;
 }
 
-.servicios__text--venta .text--body-1,
-.servicios__text--arriendo .text--body-1{
-  position: relative;
-  width: 100%;
-  height: 25rem;
-  overflow: hidden;
-  background: linear-gradient(to left, rgba(255,255,255,1) 25%,rgba(255,255,255,0) 150%);
-}
-
-.servicios__text--proteccion .image--body-1,
-.servicios__text--tramites .image--body-1,
-.servicios__text--licitaciones .image--body-1{
+.servicio-image__container{
   position: absolute;
-  top: 0;
+  max-width: 17rem;
+  max-height: 17rem;
+  top: 4rem;
   right: 0;
-  width: 75%;
-  height: 100%;
+  background: linear-gradient(to right, rgba(248, 248, 248, 1) 25%, rgba(255, 255, 255, 0) 150%);
+}
+
+.servicio-image{
+  width: 17rem;
+  height: 17rem;
   object-fit: cover;
-  z-index: -1;
-  border-top-left-radius: 90%;
+  border-top-left-radius: 100%;
+  position: relative;
+  z-index: -5;
 }
 
-.servicios__text--proteccion .details--body-1,
-.servicios__text--tramites .details--body-1,
-.servicios__text--licitaciones .details--body-1{
-  display: flex;
-  flex-direction: column;
-  padding: 3rem;
+.servicio-content__container{
+  z-index: 5;
+  position: relative;
 }
 
-.servicios__text--obra-civil .details--body-1,
-.servicios__text--acabados .details--body-1,
-.servicios__text--diseno .details--body-1,
-.servicios__text--remodelaciones .details--body-1{
-  display: flex;
-  flex-direction: column;
-  padding-left: 7rem;
-  padding-right: 1.5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.servicio-text__body-1{
+  height: 17rem;
+  padding: 2rem 5rem 2rem 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
 }
 
-.servicios__text--venta .details--body-1,
-.servicios__text--arriendo .details--body-1{
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  align-items: flex-end;
+.servicios__content .slide__text-link{
+  padding: 10px 32px;
 }
 
-.servicios__text--obra-civil .image--body-1,
-.servicios__text--acabados .image--body-1,
-.servicios__text--diseno .image--body-1,
-.servicios__text--remodelaciones .image--body-1{
-  position: absolute;
-  top: 0;
-  left: -25%;
-  width: 50%;
-  height: 20rem;
-  object-fit: cover;
-  z-index: -1;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  filter: grayscale(60%);
+.servicio-text__body-1 p{
+  margin-bottom: 1rem;
 }
 
-.servicios__text--venta .image--body-1,
-.servicios__text--arriendo .image--body-1{
-  position: absolute;
-  top: 8rem;
-  left: 0;
-  width: 75%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  border-top-right-radius: 90%;
-}
-
-.servicios__text--proteccion .text--body-1 p,
-.servicios__text--tramites .text--body-1 p,
-.servicios__text--licitaciones .text--body-1 p{
-  text-align: left;
-  color: var(--lb_grey-default);
-  font-size: 1rem;
-  font-weight: 400;
-  padding-bottom: 2rem;
-}
-
-.servicios__text--obra-civil .text--body-1 p,
-.servicios__text--acabados .text--body-1 p,
-.servicios__text--diseno .text--body-1 p,
-.servicios__text--remodelaciones .text--body-1 p{
-  text-align: left;
-  color: var(--lb_grey-default);
-  font-size: 1rem;
-  font-weight: 400;
-  padding-bottom: 2rem;
-}
-
-.servicios__text--obra-civil .text--body-1 p:nth-child(3),
-.servicios__text--acabados .text--body-1 p:nth-child(3),
-.servicios__text--diseno .text--body-1 p:nth-child(3),
-.servicios__text--remodelaciones .text--body-1 p:nth-child(3){
-  display: none;
-}
-
-.servicios__text--venta .text--body-1 p,
-.servicios__text--arriendo .text--body-1 p{
-  width: 100%;
-  text-align: left;
-  color: var(--lb_grey-default);
-  font-size: 1rem;
-  font-weight: 400;
-  padding: 0 1.5rem;
-}
-
-
-.servicios__text--proteccion .text--body-1 a,
-.servicios__text--tramites .text--body-1 a,
-.servicios__text--licitaciones .text--body-1 a{
-  margin-top: 1rem;
-}
-
-.servicios__text--obra-civil .text--body-1 a,
-.servicios__text--acabados .text--body-1 a,
-.servicios__text--diseno .text--body-1 a,
-.servicios__text--remodelaciones .text--body-1 a{
-  margin-top: 1rem;
-}
-
-.servicios__text--venta .text--body-1 a,
-.servicios__text--arriendo .text--body-1 a{
-  margin-top: 6rem;
-}
-
-.servicios__text--proteccion .text--body-2 h3,
-.servicios__text--tramites .text--body-2 h3,
-.servicios__text--licitaciones .text--body-2 h3,
-.servicios__text--obra-civil .text--body-2 h3,
-.servicios__text--acabados .text--body-2 h3,
-.servicios__text--diseno .text--body-2 h3,
-.servicios__text--remodelaciones .text--body-2 h3{
-  font-weight: 400;
-  font-size: 2rem;
-  color: var(--lb_grey-default);
+.servicio-text__body-2{
+  padding: 2rem 1.5rem;
   text-align: center;
-  margin: 1.5rem 0;
+}
+
+.servicio-text__body-2 h3{
+  font-size: 1.8rem;
+  font-weight: 500;
   font-style: italic;
-  padding: 0 2.5rem;
+  margin-bottom: 1rem;
 }
 
-
-.servicios__text--proteccion .text--body-2 p,
-.servicios__text--tramites .text--body-2 p,
-.servicios__text--licitaciones .text--body-2 p,
-.servicios__text--obra-civil .text--body-2 p,
-.servicios__text--acabados .text--body-2 p,
-.servicios__text--diseno .text--body-2 p,
-.servicios__text--remodelaciones .text--body-2 p{
-  text-align: center;
-  color: var(--lb_grey-default);
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 3rem;
-  padding: 0 1.5rem;
+.servicio-text__body-2 p{
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
 }
 
-.servicios__text--proteccion .text--body-2 .button-container,
-.servicios__text--tramites .text--body-2 .button-container,
-.servicios__text--licitaciones .text--body-2 .button-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-
-.servicios__text--venta .text--body-2 .button-container,
-.servicios__text--arriendo .text--body-2 .button-container{
+.propiedades > .button-container{
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-top: 0.5rem;
 }
 
-.servicios__text--proteccion .text--body-2 .slide__text-link,
-.servicios__text--tramites .text--body-2 .slide__text-link,
-.servicios__text--licitaciones .text--body-2 .slide__text-link{
-  width: auto;
-  padding: 0.6rem 2rem;
-  margin: 0 auto;
-  color: var(--lb_grey-default);
-  background-color: white;
-  border-color: var(--lb_grey-dark);
-}
-
-.servicios__text--venta .text--body-2 .slide__text-link,
-.servicios__text--arriendo .text--body-2 .slide__text-link{
+.propiedades .slide__text-link{
   width: auto;
   padding: 0.4em 1rem;
   color: var(--lb_grey-default);
@@ -415,44 +259,39 @@
   border-color: var(--lb_grey-dark);
   font-size: 0.9rem;
 }
+/* .propiedades > .button-container .slide__text-link,
+.propiedades > .button-container .slide__text-link{
+  padding: 0.6rem 4rem;
+  font-size: 1rem;
+}
 
-.servicios__text--proteccion .text--body-2 .image-container,
-.servicios__text--tramites .text--body-2 .image-container,
-.servicios__text--licitaciones .text--body-2 .image-container{
+.propiedades__slider .propiedades__card:nth-child(n+4){
+  display: none;
+}   */
+
+.propiedades__slider {
+  display: grid;
+  gap: 1rem;
   width: 100%;
-  overflow: hidden;
-  height: 295px;
-  margin-top: 4rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 1rem 0;
 }
 
-.servicios__text--proteccion .image--body-2,
-.servicios__text--tramites .image--body-2,
-.servicios__text--licitaciones .image--body-2{
-  margin-left: 4rem;
-  max-height: 100%;
-  border-top-left-radius: 150px;
-  border-bottom-left-radius: 150px;
-  filter: grayscale(80%);
+.post-types__container{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.servicios__text--obra-civil .proyectos__list--container,
-.servicios__text--acabados .proyectos__list--container,
-.servicios__text--diseno .proyectos__list--container,
-.servicios__text--remodelaciones .proyectos__list--container{
+.proyectos__list--container-slide-2,
+.proyectos__list--container-slide-3{
   background-color: var(--lb_grey-lightest);
   padding: 2.5rem 1rem;
 }
 
-.servicios__text--venta .proyectos__list--container,
-.servicios__text--arriendo .proyectos__list--container{
-  background-color: var(--lb_grey-lightest);
-  padding: 2.5rem 0.5rem;
-}
-
-.servicios__text--obra-civil .proyectos__list--container h2,
-.servicios__text--acabados .proyectos__list--container h2,
-.servicios__text--diseno .proyectos__list--container h2,
-.servicios__text--remodelaciones .proyectos__list--container h2{
+.proyectos__list--container-slide-2 h2,
+.proyectos__list--container-slide-3 h2{
   text-align: center;
   font-size: 1.2rem;
   font-weight: 400;
@@ -460,41 +299,26 @@
   margin-bottom: 1.5rem;
 }
 
-.servicios__text--venta .proyectos__list--container h2,
-.servicios__text--arriendo .proyectos__list--container h2{
-  font-size: 2rem;
+.proyectos__list--container-slide-3 p{
+  margin-bottom: 0.3rem;
   text-align: center;
-  font-weight: 400;
-  color: var(--lb_grey-default);
-  margin-bottom: 1.5rem;
-  font-style: italic;
-  padding: 0 1rem;
 }
 
-.servicios__text--venta .proyectos__list--container p,
-.servicios__text--arriendo .proyectos__list--container p{
-  font-weight: 400;
-  font-size: 1rem;
-  text-align: center;
-  padding: 0 2rem;
-  color: var(--lb_grey-default);
+.proyectos--realizados__slider{
+  display:flex;
+  justify-content: flex-start;
+  overflow: auto;
+  gap: 0.7rem;  
 }
 
-.servicios__text--venta .line-break{
-  margin: 1rem 3rem;
+.proyectos--realizados__card{
+  width: 276px;
+  height: 395px;
+  background-color: var(--lb_white-background);
+  padding: 0;
 }
 
-.servicios__text--obra-civil .proyectos--realizados, 
-.servicios__text--acabados .proyectos--realizados,
-.servicios__text--diseno .proyectos--realizados,
-.servicios__text--remodelaciones .proyectos--realizados{
-  padding: 1rem 0;
-}
-
-.servicios__text--obra-civil .proyectos--realizados h3,
-.servicios__text--acabados .proyectos--realizados h3,
-.servicios__text--diseno .proyectos--realizados h3,
-.servicios__text--remodelaciones .proyectos--realizados h3{
+.proyectos--realizados h3{
   margin-bottom: 1.5rem;
   margin-top: 0.5rem;
   font-size: 1.5rem;
@@ -502,40 +326,14 @@
   font-weight: 600;
 }
 
-.servicios__text--obra-civil .proyectos--realizados__slider,
-.servicios__text--acabados .proyectos--realizados__slider,
-.servicios__text--diseno .proyectos--realizados__slider,
-.servicios__text--remodelaciones .proyectos--realizados__slider{
-  display:flex;
-  justify-content: flex-start;
-  overflow: auto;
-  gap: 0.7rem;  
-}
-
-.servicios__text--obra-civil .proyectos--realizados__card,
-.servicios__text--acabados .proyectos--realizados__card,
-.servicios__text--diseno .proyectos--realizados__card,
-.servicios__text--remodelaciones .proyectos--realizados__card{
-  width: 276px;
-  height: 395px;
-  background-color: var(--lb_white-background);
-  padding: 0;
-}
-
-.servicios__text--obra-civil .proyectos--realizados__card img,
-.servicios__text--acabados .proyectos--realizados__card img,
-.servicios__text--diseno .proyectos--realizados__card img,
-.servicios__text--remodelaciones .proyectos--realizados__card img{
+.proyectos--realizados__card img{
   width: 276px;
   height: 308px;
   object-fit: cover;
   /* filter: grayscale(80%); */
 }
 
-.servicios__text--obra-civil .proyectos--realizados__card h4,
-.servicios__text--acabados .proyectos--realizados__card h4,
-.servicios__text--diseno .proyectos--realizados__card h4,
-.servicios__text--remodelaciones .proyectos--realizados__card h4{
+.proyectos--realizados__card h4{
   font-size: 1.5rem;
   text-align: justify;
   font-weight: 600;
@@ -543,10 +341,7 @@
   margin: 0.2rem 1rem;
 }
 
-.servicios__text--obra-civil .proyectos--realizados__card p,
-.servicios__text--acabados .proyectos--realizados__card p,
-.servicios__text--diseno .proyectos--realizados__card p,
-.servicios__text--remodelaciones .proyectos--realizados__card p{
+.proyectos--realizados__card p{
   margin: 0.4rem 1rem;
   font-size: 1rem;
   text-align: justify;
@@ -555,50 +350,25 @@
   padding: 0;
 }
 
-.servicios__text--venta .propiedades,
-.servicios__text--arriendo .propiedades{
-  padding: 1rem 0;
-}
-
-.servicios__text--venta .propiedades > .button-container,
-.servicios__text--arriendo .propiedades > .button-container{
-  justify-content: center;
-  margin-top: -55rem;
-}
-
-.propiedades > .button-container .slide__text-link,
-.propiedades > .button-container .slide__text-link{
-  padding: 0.6rem 4rem;
-  font-size: 1rem;
-}
-
-.propiedades__slider .propiedades__card:nth-child(n+4){
-  display: none;
-}
-
-.servicios__text--venta .propiedades__card,
-.servicios__text--arriendo .propiedades__card{
+.propiedades__card{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   background-color: var(--lb_white-background);
 }
 
-.servicios__text--venta .propiedades__card img,
-.servicios__text--arriendo .propiedades__card img{
+.propiedades__card img{
   width: 135px;
   height: 148px;
   object-fit: cover;
 }
 
-.servicios__text--venta .propiedades__card--details,
-.servicios__text--arriendo .propiedades__card--details{
+.propiedades__card--details{
   width: 100%;
   padding: 0 0.7rem;
 }
 
-.servicios__text--venta .propiedades__card--details h4,
-.servicios__text--arriendo .propiedades__card--details h4{
+.propiedades__card--details h4{
   font-size: 1.3rem;
   line-height: 1.5rem;
   color: var(--lb_grey-default);
@@ -606,23 +376,24 @@
   margin-bottom: 0.3rem;
 }
 
-.servicios__text--venta .propiedades__card--details p,
-.servicios__text--arriendo .propiedades__card--details p{
+.propiedades__card--details p{
   font-size: 1rem;
   line-height: 1.3rem;
   color: var(--lb_grey-default);
   font-weight: 400;
   text-align: justify;
   padding: 0;
-}  
-
-.propiedades__slider {
-  display: grid;
-  gap: 1rem;
-  width: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, 1fr);
 }
+
+.image--body-2{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 30rem;
+  border-top-left-radius: 30rem;
+  border-bottom-left-radius: 30rem;
+}
+
 /* End Styles inner content for Services (servicios__text) */
 
 /* Media queries for desktop */
@@ -670,138 +441,36 @@
   }
 
   .servicios--slides {
-    height: 125vh;
+    height: 95rem;
   }  
 
-  .servicios__text--heading-mobile{
+  .servicio-wrapper--heading-mobile{
     display: none;
   }
 
-  .servicios__text--heading-desktop{
+  .servicio-wrapper--heading-desktop{
     display: block;
     padding: 0;
     text-align: left;
     font-size: 2.5rem;
   }
 
-  .servicios__text--venta .propiedades > .button-container,
-  .servicios__text--arriendo .propiedades > .button-container{
-    justify-content: center;
-    margin-top: 1.5rem;
-  }
-
-
-  .servicios__text--proteccion .text--body-1,
-  .servicios__text--tramites .text--body-1,
-  .servicios__text--licitaciones .text--body-1,
-  .servicios__text--obra-civil .text--body-1,
-  .servicios__text--acabados .text--body-1,
-  .servicios__text--diseno .text--body-1,
-  .servicios__text--remodelaciones .text--body-1
-  {
-    height: 32rem;
-    display: block;
-    background: linear-gradient(to right, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 0) 150%);
-  }
-
-  .servicios__text--obra-civil .text--body-1 p,
-  .servicios__text--acabados .text--body-1 p,
-  .servicios__text--diseno .text--body-1 p,
-  .servicios__text--remodelaciones .text--body-1 p{
-    width: 75%;
-  }
-
-  .servicios__text--venta .text--body-1,
-  .servicios__text--arriendo .text--body-1
-  {
-    height: 32rem;
-    display: block;
-  }
-
-  .servicios__text--proteccion .text--body-2,
-  .servicios__text--tramites .text--body-2,
-  .servicios__text--licitaciones .text--body-2{
-    padding-top: 3rem;
-  }
-
-  .servicios__text--proteccion .image--body-1,
-  .servicios__text--tramites .image--body-1,
-  .servicios__text--licitaciones .image--body-1{
-    width: 40%;
-    height: 100%;
-  }
-
-  .servicios__text--obra-civil .image--body-1,
-  .servicios__text--acabados .image--body-1,
-  .servicios__text--diseno .image--body-1,
-  .servicios__text--remodelaciones .image--body-1{
-    width: 40%;
-    height: 100%;
-    position: absolute;
+  .servicio-image__container{
     top: 0;
-    right: 0;
-    left: auto;
-    width: 40%;
-    height: 100%;
+    max-width: 43rem;
+    max-height: 43rem;
+  }
+  
+  .servicio-image{
+    width: 43rem;
+    height: 43rem;
     object-fit: cover;
-    z-index: -1;
-    border-bottom-left-radius: 90%;
-    border-top-right-radius: initial;
-    border-bottom-right-radius: initial;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 0%;
   }
 
-  .servicios__text--venta .image--body-1,
-  .servicios__text--arriendo .image--body-1{
-    width: 40%;
-    height: 100%;
-    top: 0;
-  }
-
-
-  .servicios__text--proteccion .details--body-1,
-  .servicios__text--tramites .details--body-1,
-  .servicios__text--licitaciones .details--body-1,
-  .servicios__text--obra-civil .details--body-1,
-  .servicios__text--acabados .details--body-1,
-  .servicios__text--diseno .details--body-1,
-  .servicios__text--remodelaciones .details--body-1{
-    width: 70%;
-    height: 100%;
-    gap: 1rem;
-    padding-left: 6rem;
-  }
-
-  .servicios__text--obra-civil .text--body-1 p:nth-child(3),
-  .servicios__text--acabados .text--body-1 p:nth-child(3),
-  .servicios__text--diseno .text--body-1 p:nth-child(3),
-  .servicios__text--remodelaciones .text--body-1 p:nth-child(3){
-    display: block;
-  }
-
-  .servicios__text--proteccion .text--body-2 .image-container,
-  .servicios__text--tramites .text--body-2 .image-container,
-  .servicios__text--licitaciones .text--body-2 .image-container{
-    display: none;
-  }
-
-  .servicios__text--venta .details--body-1,
-  .servicios__text--arriendo .details--body-1{
-    width: 70%;
-    height: 100%;
-    gap: 1rem;
-    position: absolute;
-    right: 0;
-    padding: 3rem 6rem;
-  }
-
-  .servicios__text--venta .servicios__text--heading-desktop,
-  .servicios__text--arriendo .servicios__text--heading-desktop{
-    align-self: flex-start;
-  }
-
-  .servicios__text--venta .text--body-1 p,
-  .servicios__text--arriendo .text--body-1 p{
-    padding: 0;
+  .servicio-content__container{
+    padding: 3rem 9rem;
   }
 
   .propiedades__slider .propiedades__card:nth-child(n+4){
@@ -811,5 +480,32 @@
   .propiedades__slider {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
+      padding: 1rem 1rem;
   }
+
+  .servicio-text__body-1{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding-left: 0;
+    width: 60%;
+    height: auto;
+  }
+
+  .servicio-text__body-1 a{
+    display: none;
+  }
+
+  .servicio-text__body-2 h3 {
+    font-size: 2rem;
+  }
+
+  .servicio-text__body-2{
+    width: 50%;
+    margin-left: 6rem;
+  }
+
+  .proyectos--realizados h3{
+    margin-left: 3rem;
+  }
+  
 }

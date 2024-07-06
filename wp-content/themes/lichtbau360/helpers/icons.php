@@ -94,3 +94,11 @@ if (! function_exists('servicios_icon')) {
       }
   }
 }
+
+if (! function_exists('slugify')) {
+  function slugify($text){
+    $textLower = strtolower($text);
+    $textDash = str_replace(' ', '-', $textLower);
+    return $textDash;
+  }
+}
