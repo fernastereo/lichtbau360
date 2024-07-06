@@ -2,6 +2,7 @@
   $imagenes_intro = get_field('imagenes_intro');
   $contentPilares = get_field('nuestros_pilares');
   $contentFilosofia = get_field('nuestra_filosofia');
+  $contentEquipo = get_field('nuestro_equipo');
   $contentMisionVision = get_field('mision_vision');
   $contentFooter = get_field('pie_de_pagina');
 
@@ -25,6 +26,10 @@
   $tituloFilosofia3 = $contentFilosofia['filosofia_3']['titulo_filosofia_3'];
   $textoFilosofia3 = $contentFilosofia['filosofia_3']['texto_filosofia_3'];
   $imagenFilosofia3 = $contentFilosofia['filosofia_3']['imagen_filosofia_3'];
+
+  $tituloEquipo = $contentEquipo['titulo_nuestro_equipo'];
+  $textoEquipoPrincipal = $contentEquipo['texto_nuestro_equipo'];
+  $textoEquipoSecundario = $contentEquipo['texto_nuestro_equipo_secundario'];
 
   $mision = $contentMisionVision['mision'];
   $vision = $contentMisionVision['vision'];
@@ -108,9 +113,10 @@
   </div>
 
   <div class="equipo-wrapper">
-    <h2>Nuestro Equipo</h2>
+    <h2><?= esc_attr($tituloEquipo) ?></h2>
     <div class="equipo-wrapper__details">
-      <p><?= esc_attr($textoFilosofiaPrincipal) ?></p>
+      <p><?= esc_attr($textoEquipoPrincipal) ?></p>
+      <p><?= $textoEquipoSecundario ?></p>
       <div class="equipo-wrapper__body">
         <?php 
           $colaboradores = new WP_Query(array(

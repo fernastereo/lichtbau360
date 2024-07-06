@@ -287,6 +287,10 @@
   margin-bottom: 1.5rem;
 }
 
+.equipo-wrapper__details > p:nth-child(2) {
+  display: none;
+}
+
 .equipo-wrapper__body{
   display: flex;
   flex-direction: column;
@@ -617,6 +621,11 @@
   .equipo-wrapper__details > p{
     padding: 0;
     width: 80%;
+  }
+
+  .equipo-wrapper__details > p:nth-child(2) {
+    display: block;
+    margin-top: 2rem;
   }
 
   .equipo-wrapper__body{
