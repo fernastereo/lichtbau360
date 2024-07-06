@@ -113,7 +113,7 @@ footer {
   .footer-container{
     font-size: 0.9rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 80%;
     text-align: left;
   }
@@ -124,6 +124,10 @@ footer {
 
   .footer-container a{
     font-weight: 300;
+  }
+
+  .site-footer__column{
+    margin: 0 3rem 3rem 1rem;
   }
 
   .site-footer__column-one{

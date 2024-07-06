@@ -4,24 +4,24 @@
       <h3 class="headline headline--small">Lichtbau360</h3>
       <nav class="nav-footer"> 
         <ul>
-          <li><a href="/">Contactanos</a></li>
+          <li><a href="/#contacto">Contactanos</a></li>
           <li><a href="/">Procesos de Calidad</a></li>
           <li><a href="/">Certificaciones</a></li>
         </ul>
         <div class="social-icons-container">
-          <a href="/">
+          <a href="https://www.instagram.com/lichtbau360" target="_blank">
             <?= social_icon('instagram') ?>
           </a>
-          <a href="/">
+          <a href="https://www.tiktok.com/@lichtbau360" target="_blank">
             <?= social_icon('tiktok') ?>
           </a>
-          <a href="/">
+          <a href="https://www.youtube.com/@LICHTBAU360" target="_blank">
             <?= social_icon('youtube') ?>
           </a>
-          <a href="/">
+          <a href="http://facebook.com/lichtbau360" target="_blank">
             <?= social_icon('facebook') ?>
           </a>
-          <a href="/">
+          <a href="https://www.linkedin.com/company/lichtbau360/about/" target="_blank">
             <?= social_icon('linkedin') ?>
           </a>
         </div>
@@ -31,29 +31,9 @@
       <h3 class="headline headline--small">Servicios</h3>
       <nav>
         <ul>
-          <li><a href="/">Desarrollo de Proyectos</a></li>
-          <li><a href="/">Asesorías Jurídicas</a></li>
-          <li><a href="/">Gestión Inmobiliaria</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="site-footer__column site-footer__column-three">
-      <h3 class="headline headline--small">Proyectos</h3>
-      <nav>
-        <ul>
-          <li><a href="/">Casos de Estudio</a></li>
-          <li><a href="/">En Obra</a></li>
-          <li><a href="/">Obras Terminadas</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="site-footer__column site-footer__column-four">
-      <h3 class="headline headline--small">Otros Enlaces</h3>
-      <nav>
-        <ul>
-          <li><a href="/">Fuera de Colombia</a></li>
-          <li><a href="/">Blog</a></li>
-          <li><a href="/">Servicio al Cliente</a></li>
+          <li><a href="/#servicios">Desarrollo de Proyectos</a></li>
+          <li><a href="/#servicios">Asesorías Jurídicas</a></li>
+          <li><a href="/#servicios">Gestión Inmobiliaria</a></li>
         </ul>
       </nav>
     </div>
