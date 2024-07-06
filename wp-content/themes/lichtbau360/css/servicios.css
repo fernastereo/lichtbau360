@@ -386,10 +386,11 @@
 }
 
 .image--body-2{
+  width: 80%;
+  height: 18rem;
+  bottom: 10rem;
   position: absolute;
-  bottom: 0;
   right: 0;
-  height: 30rem;
   border-top-left-radius: 30rem;
   border-bottom-left-radius: 30rem;
 }
@@ -506,6 +507,12 @@
 
   .proyectos--realizados h3{
     margin-left: 3rem;
+  }
+  
+  .image--body-2{
+    width: auto;
+    bottom: 0;
+    height: 30rem;
   }
   
 }
