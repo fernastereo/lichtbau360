@@ -19,6 +19,7 @@
 .images-main img{
   width: 100%;
   height: 50vh;
+  object-fit: cover;
 }
 
 .images-mini img{
