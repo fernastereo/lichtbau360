@@ -13,11 +13,13 @@ function lichtbau360_files() {
   wp_enqueue_style('lichtbau360_servicios_styles', get_theme_file_uri('/css/servicios.css'));
   wp_enqueue_style('lichtbau360_contacto_styles', get_theme_file_uri('/css/contacto.css'));
   wp_enqueue_style('lichtbau360_nosotros_styles', get_theme_file_uri('/css/nosotros.css'));
+  wp_enqueue_style('lichtbau360_propiedades_styles', get_theme_file_uri('/css/propiedades.css'));
 
   wp_enqueue_script('lichtbau360_menu_js', get_theme_file_uri('/build/menu.js'), NULL, '1.0', true);
   wp_enqueue_script('lichtbau360_language_switcher_js', get_theme_file_uri('/build/language_switcher.js'), NULL, '1.0', true);
   wp_enqueue_script('lichtbau360_slider_js', get_theme_file_uri('/build/slider.js'), array('jquery'), '1.0', true);
   wp_enqueue_script('lichtbau360_servicios_js', get_theme_file_uri('/build/servicios.js'), array('jquery'), '1.0', true);
+  wp_enqueue_script('lichtbau360_hover-imagen_js', get_theme_file_uri('/build/hover-imagen.js'), array('jquery'), '1.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'lichtbau360_files');

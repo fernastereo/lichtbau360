@@ -1,7 +1,4 @@
 <?php 
-$parametro1 = isset($args['parametro1']) ? 'pilars--' . $args['parametro1'] : '';
-$parametro2 = isset($args['parametro2']) ? 'pilars--' . $args['parametro2'] : '';
-
 $servicios = get_field('servicios');
 
 ?>

@@ -84,12 +84,12 @@
                     <div class="propiedades__card">
                       <img src="<?php the_post_thumbnail_url( 'propertyThumbnail' ) ?>" alt="<?php the_title(); ?>">
                       <div class="propiedades__card--details">
-                        <h4><a href="#<?php //the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                        <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                         <p><?php the_field('ciudad'); ?></p>
                         <p><?php the_field('barrio'); ?></p>
-                        <p>$<?php the_field('valor'); ?></p>
+                        <p><?php echo '$' . number_format(get_post_meta(get_the_ID(), 'valor', true), 0); ?></p>
                         <div class="button-container">
-                          <a class="slide__text-link">Ver Más</a>
+                          <a href="<?php the_permalink(); ?>" class="slide__text-link">Ver Más</a>
                         </div>
                       </div>
                     </div>
