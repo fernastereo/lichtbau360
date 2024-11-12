@@ -13,10 +13,18 @@ $foto3 = get_field('foto3')["sizes"]["medium_large"];
         <div class="propiedad-details">
             <div class="image-container">
                 <div class="images-mini">
-                    <img src="<?= $foto0 ?>" alt="<?php the_title(); ?>" onmouseover="showImage('<?= $foto0 ?>')" onclick="showImage('<?= $foto0 ?>')">
-                    <img src="<?= $foto1 ?>" alt="<?php the_title(); ?>" onmouseover="showImage('<?= $foto1 ?>')" onclick="showImage('<?= $foto0 ?>')">
-                    <img src="<?= $foto2 ?>" alt="<?php the_title(); ?>" onmouseover="showImage('<?= $foto2 ?>')" onclick="showImage('<?= $foto0 ?>')">
-                    <img src="<?= $foto3 ?>" alt="<?php the_title(); ?>" onmouseover="showImage('<?= $foto3 ?>')" onclick="showImage('<?= $foto0 ?>')">
+                    <?php if(isset($foto1)): ?>
+                        <img src="<?= $foto0 ?>" alt="<?php the_title(); ?>" onmouseover="showImage('<?= $foto0 ?>')" onclick="showImage('<?= $foto0 ?>')">
+                    <?php endif; ?>
+                    <?php if(isset($foto1)): ?>
+                        <img src="<?= $foto1 ?>" alt="<?php the_title(); ?>" onmouseover="showImage('<?= $foto1 ?>')" onclick="showImage('<?= $foto0 ?>')">
+                    <?php endif; ?>
+                    <?php if(isset($foto2)): ?>
+                        <img src="<?= $foto2 ?>" alt="<?php the_title(); ?>" onmouseover="showImage('<?= $foto2 ?>')" onclick="showImage('<?= $foto0 ?>')">
+                    <?php endif; ?>
+                    <?php if(isset($foto3)): ?>
+                        <img src="<?= $foto3 ?>" alt="<?php the_title(); ?>" onmouseover="showImage('<?= $foto3 ?>')" onclick="showImage('<?= $foto0 ?>')">
+                    <?php endif; ?>
                 </div>
                 <div class="images-main">
                     <img src="<?= $foto0 ?>" alt="<?php the_title(); ?>">
