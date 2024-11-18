@@ -1,5 +1,4 @@
 <?php get_header();
-$contentPilares = get_field('nuestros_pilares');
 $title = get_the_title(); 
 $foto0 = get_the_post_thumbnail_url(get_the_ID(), 'large');
 $foto1 = get_field('foto1')["sizes"]["medium_large"];
@@ -80,6 +79,4 @@ $foto3 = get_field('foto3')["sizes"]["medium_large"];
         <p>No se encontró la propiedad.</p>
     <?php endif; ?>
 </div>
-
 <?php get_footer(); ?>
-

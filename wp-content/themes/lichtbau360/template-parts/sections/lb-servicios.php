@@ -35,7 +35,7 @@ $servicios = get_field('servicios');
           'servicio' => $servicios['servicio_3'], 
           'slide' => 'slide-3',
           'query' => ['post_type' => 'propiedad',
-                      'posts_per_page' => 9]
+                      'posts_per_page' => 6]
           ]); ?>
     </div>
   </div>

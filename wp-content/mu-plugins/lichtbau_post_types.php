@@ -53,7 +53,6 @@ function lichtbau360_post_types() {
     'supports' => array('title', 'editor', 'thumbnail'),
     'taxonomies' => array('category')
   ));
-
 }
 add_action('init', 'lichtbau360_post_types');
 ?>

@@ -96,7 +96,12 @@
                   <?php }?>
               </div>
               <div class="button-container">
-                <a class="slide__text-link">Ver Todos</a>
+                <?php
+                  $archive_link = get_post_type_archive_link('propiedad');
+                  if ($archive_link) {
+                      echo '<a class="slide__text-link" href="' . esc_url($archive_link) . '">Ver Todos</a>';
+                  }
+                ?>
               </div>
             </div>
           </div>
